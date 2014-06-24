@@ -260,6 +260,34 @@ a:hover { text-decoration:underline; color:#333; }
 	margin: 0;
 }
 
+.load_more_cont
+{
+	width: 768px;
+	margin: 0 auto;
+	background-color: #0063a8;
+}
+
+.load_more_cont a
+{
+	overflow: hidden;
+	width: inherit;
+	text-align: center;
+	text-decoration: none;
+}
+
+.load-more-button
+{
+	overflow: hidden;
+}
+
+.load-more-button p
+{
+	color: #fff;
+	font-family: GothamMedium, Arial;
+	font-size: 16px;
+	margin: 12px 0;
+}
+
 
 .blog_left { float: left; width: 660px; }
 

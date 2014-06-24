@@ -18,29 +18,16 @@
 
                      'cat' => '-' . $category_ID,
 
-                     'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1)/*,
-
-                     'offset' => 1*/
+                     'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1)
 
                      );            
 
         query_posts($args);
 
-        $x = 0;
-
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         
 
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-        if($paged > 1) 
-
-          $y = (0 + (($paged-1) * 3));
-
-        else
-
-          $y = 0;
-
-        while (have_posts()) : the_post(); ?>                                                                      
+        if(have_posts()) : while (have_posts()) : the_post(); ?>                                                                      
 
             <div class="home_post_box">
 
@@ -50,7 +37,7 @@
                 <h1><?php the_title(); ?></h1>
               </div><!--//home_post_title_cont-->
 
-              <div class="home_post_desc" id="home_post_desc<?php echo $y; ?>">
+              <div class="home_post_desc">
                 <p>
                   <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
                 </p>
@@ -58,15 +45,7 @@
 
             </div><!--//home_post_box-->
 
-        
-
-            <?php if($x == 2) { $x = -1; /*echo '<div class="clear"></div>';*/ } ?>
-
-        
-
-        <?php $x++; $y++; ?>
-
-        <?php endwhile; ?>        
+        <?php endwhile; endif; ?>        
 
         <?php wp_reset_query(); ?>        
 
@@ -81,9 +60,7 @@
         
 
         <div class="load_more_cont">
-
-            <p align="center"><span class="load_more_text"><?php next_posts_link('<img src="' . get_bloginfo('stylesheet_directory') . '/images/load-more-image.png" />') ?></span></p>
-
+            <?php next_posts_link('<div class="load-more-button"><p>Load more</p></div>', 0); ?>
         </div><!--//load_more_cont-->
 
         

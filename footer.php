@@ -6,41 +6,12 @@
 
         <div class="footer_widgets_cont">
 
-        
-
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) : ?>       
-
-        
-
-            <div class="footer_box">
-
-                <h3>Widget Footer</h3>
-
-                <p>Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box.</p>
-
-            </div><!--//footer_box-->
-
-            
-
-            <div class="footer_box">
-
-                <h3>Widget Footer</h3>
-
-                <p>Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box.</p>
-
-            </div><!--//footer_box-->
-
-
-
-            
-
-            <?php endif; ?>                
-
-            
+            <div class="footer-logo-cont">
+                <div class="footer-logo"></div>
+                <p>2014 Alamo Rent a car</p>
+            </div>
 
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Last') ) : ?>       
-
-            
 
             <div class="footer_box footer_box_last">
 
@@ -50,21 +21,9 @@
 
             </div><!--//footer_box-->            
 
-            
-
-            <?php endif; ?>                
-
-            
-
-            <div class="clear"></div>
-
-        
+            <?php endif; ?>
 
         </div><!--//footer_widgets_cont-->
-
-    
-
-        <div class="footer_copyright">© 2012 Simple Grid Theme   All Rigts Reserved. Design and Developed by <a href="http://www.dessign.net">Dessign.net</a> Inspired by <a href="http://www.el-studio.co.uk/"> el-studio.co.uk</a></div>
 
     </div><!--//footer-->
 
