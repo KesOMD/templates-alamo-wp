@@ -7,7 +7,11 @@
         <div class="footer_widgets_cont">
 
             <div class="footer-logo-cont">
-                <div class="footer-logo"></div>
+                <div class="footer-logo">
+                    <a>
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/alamo_logo_213x96.png" class="logo" />
+                    </a>
+                </div>
                 <p>2014 Alamo Rent a car</p>
             </div>
 
