@@ -52,6 +52,10 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 
   add_image_size('home-blog-image', 516, 318, true);
 
+  add_image_size('post-gal-thumb', 50, 50, true);
+
+  add_image_size('post-gal-image', 768, 372, true);
+
 }
 
 

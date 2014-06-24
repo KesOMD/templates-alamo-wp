@@ -18,9 +18,9 @@
 
                      'cat' => '-' . $category_ID,
 
-                     'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+                     'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1)/*,
 
-                     'offset' => 1
+                     'offset' => 1*/
 
                      );            
 
@@ -44,25 +44,19 @@
 
             <div class="home_post_box">
 
-            
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-blog-image',array('alt' => 'post image')); ?></a>
 
-                <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/images/blog-image.jpg" />-->
+              <div class="home_post_title_cont">
+                <h1><?php the_title(); ?></h1>
+              </div><!--//home_post_title_cont-->
 
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-blog-image',array('alt' => 'post image')); ?></a>
+              <div class="home_post_desc" id="home_post_desc<?php echo $y; ?>">
+                <p>
+                  <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
+                </p>
+              </div><!--//home_post_desc-->
 
-                <div class="home_post_title_cont">
-
-                    <h1><?php the_title(); ?></h1>
-
-                </div><!--//home_post_title_cont-->
-
-                <div class="home_post_desc" id="home_post_desc<?php echo $y; ?>">
-
-                    <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,225)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo $display_arr_content . '...'; ?>
-
-                </div><!--//home_post_desc-->
-
-              </div><!--//home_post_box-->
+            </div><!--//home_post_box-->
 
         
 
@@ -100,13 +94,10 @@
 
 // Ajax-fetching "Load more posts"
 
-$('.load_more_cont a').live('click', function(e) {
+$('.load_more_cont a').live('click', function(e)
+{
 
 	e.preventDefault();
-
-	//$(this).addClass('loading').text('Loading...');
-
-        //$('.load_more_text a').html('Loading...');
 
 	$.ajax({
 
@@ -116,68 +107,40 @@ $('.load_more_cont a').live('click', function(e) {
 
 		dataType: "html",
 
-		success: function(out) {
-
+		success: function(out)
+    {
 			result = $(out).find('#load_posts_container .home_post_box');
 
 			nextlink = $(out).find('.load_more_cont a').attr('href');
 
-                        //alert(nextlink);
+      $('#load_posts_container').append(result);
 
-			//$('#boxes').append(result).masonry('appended', result);
-
-                    $('#load_posts_container').append(result);
-
-			//$('.fetch a').removeClass('loading').text('Load more posts');
-
-                        //$('.load_more_text a').html('Load More');
-
-                        
-
-                        
-
-			if (nextlink != undefined) {
+			if (nextlink != undefined)
+      {
 
 				$('.load_more_cont a').attr('href', nextlink);
 
-			} else {
+			}
+      else
+      {
 
 				$('.load_more_cont').remove();
-
-                                $('#load_posts_container').append('<div class="clear"></div>');
-
-                              //  $('.load_more_cont').css('visibilty','hidden');
-
+        $('#load_posts_container').append('<div class="clear"></div>');
 			}
 
-
-
-                    if (nextlink != undefined) {
-
-                        $.get(nextlink, function(data) {
-
-                          //alert(nextlink);
-
-                          if($(data + ":contains('home_post_box')") != '') {
-
-                            //alert('not found');
-
-                              //                      $('.load_more_cont').remove();
-
-                                                    $('#load_posts_container').append('<div class="clear"></div>');        
-
-                          }
-
-                        });                        
-
-                    }
-
-                        
-
+      if (nextlink != undefined)
+      {
+        $.get(nextlink, function(data)
+        {
+          if($(data + ":contains('home_post_box')") != '')
+          {
+            //alert('not found');
+            $('#load_posts_container').append('<div class="clear"></div>');        
+          }
+        });
+      }
 		}
-
 	});
-
 });
 
 </script>        

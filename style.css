@@ -228,39 +228,37 @@ a:hover { text-decoration:underline; color:#333; }
 
 .home_post_title_cont
 {
-	width: 321px;
+	width: 364px;
 	text-align: left;
 	padding: 0;
+	margin-top: 12px;
 }
 
 .home_post_title_cont h1
 {
 	color: #000;
 	font-family: GothamMedium, Arial;
-	font-size: 16px;
+	font-size: 20px;
+	font-weight: normal;
 	margin: 0;
 }
 
-.home_post_title_cont h4 { margin: 0; font-size: 11px; font-weight: normal; }
+.home_post_desc
+{
+	width: inherit;
+	padding: 0;
+	margin-top: 5px;
+	display: block;
+	overflow: hidden;
+}
 
-.home_post_title_cont h4 a { color: #8093a4; text-decoration: none; }
-
-.home_post_title_cont h4 a:hover { text-decoration: underline; }
-
-
-
-.blog_box_cont { float: left; width: 321px; margin-right: 18px; }
-
-.blog_box_cont .home_post_box { margin-right: 0; margin-bottom: 0; }
-
-.blog_box { margin-bottom: 0; margin-right: 0; }
-
-.blog_content { margin-bottom: 25px; padding-top: 10px; float: left; }
-
-
-
-.home_post_desc { width: 235px; padding: 15px 10px; left: 34px; top: 0; position: absolute; color: #fff; background-color:rgba(0,0,0,0.5); font-size: 10px; display: none; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; overflow: hidden; }
-
+.home_post_desc p
+{
+	color: #000;
+	font-family: GothamBook, Arial;
+	font-size: 16px;
+	margin: 0;
+}
 
 
 .blog_left { float: left; width: 660px; }
