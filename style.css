@@ -14,7 +14,7 @@ body
 {
 	font-size: 12px;
 	font-family: arial, verdana, georgia;
-	color: #666;
+	color: #fff;
 }
 
 @font-face
@@ -342,8 +342,9 @@ a:hover { text-decoration:underline; color:#333; }
 .footer_widgets_cont
 {
 	width: 1000px;
-	margin: 0 auto;
+	margin: 25px auto 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 
@@ -351,6 +352,7 @@ a:hover { text-decoration:underline; color:#333; }
 {
 	overflow: hidden;
 	width: 130px;
+	float: left;
 }
 
 .footer-logo-cont p
@@ -371,7 +373,13 @@ a:hover { text-decoration:underline; color:#333; }
 }
 
 
-.footer_box { float: left; width: 320px; margin-right: 20px; margin-bottom: 20px; }
+.footer_box
+{
+	float: left;
+	width: 320px;
+	margin-right: 20px; 
+	margin-bottom: 20px;
+}
 
 .footer_box_last { margin-right: 0; }
 

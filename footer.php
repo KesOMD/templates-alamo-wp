@@ -16,14 +16,14 @@
             </div>
 
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Last') ) : ?>       
-
+            <!--
             <div class="footer_box footer_box_last">
 
                 <h3>Widget Footer</h3>
 
                 <p>Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box.</p>
 
-            </div><!--//footer_box-->            
+            </div>//footer_box-->            
 
             <?php endif; ?>
 
