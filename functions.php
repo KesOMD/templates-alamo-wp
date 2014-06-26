@@ -28,9 +28,6 @@ function revconcept_get_images($post_id) {
      $images = get_children( array('post_parent' => $post_id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
 
      $number_of_images = count($images);
-     debug_to_console( $number_of_images );
-
-     debug_to_console( $thumbnail_ID );
  
      if ($images) :
  

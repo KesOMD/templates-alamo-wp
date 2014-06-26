@@ -4,22 +4,56 @@
 
         <div id="load_posts_container">
 
+        <div class="main-post">
         <?php
         $my_query = new WP_Query('showposts=1');
         while ( $my_query->have_posts() ) : $my_query->the_post();
         $do_not_duplicate = $post->ID;
+
+        $images1 = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
+
+        $number_of_images = count($images1);
         ?>
 
-          <div class="main-post">
+          <?php if ($number_of_images > 1) { ?>
             <div class="flexslider">
               <ul class="slides">
                 <?php revconcept_get_images("$post->ID"); ?>
               </ul>
             </div><!--end flexslider-->
-          </div>
+          <?php } else { ?>
+            <div class="main-post-image">
+              <?php the_post_thumbnail(); ?>
+            </div>
+          <?php } ?>
+            <div class="main-post-details">
+              <div class="main-post-text">
+                <div class="main-post-title">
+                  <h1><?php the_title(); ?></h1>
+                </div>
+                <div class="main-post-desc">
+                  <p>
+                    <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
+                  </p>
+                </div>
+                <div class="main-post-link">
+                  <a href="<?php the_permalink(); ?>">
+                    <p>Read More</p>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/read-more-arrow.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="main-post-tags">
+                <?php the_tags('<div class="main-post-tag"><div class="main-tag-left"></div><div class="main-tag-right">','</div></div><div class="main-post-tag"><div class="main-tag-left"></div><div class="main-tag-right">','</div></div>'); ?>
+              </div>
+              
+            </div>
+          
 
         <?php endwhile; ?>
+        </div><!--end main-post-->
 
+        <div id="other-posts">
         <?php
 
         $category_ID = get_category_id('blog');
@@ -65,7 +99,16 @@
 
         <?php wp_reset_query(); ?>        
 
-        
+        </div><!--end other-posts-->
+
+        <div class="right-side">
+          <div class ="email-signup">
+            <div class="email-header">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="email-text"></div>
+          </div>
+        </div>
 
         <div class="clear"></div>
 
@@ -73,6 +116,7 @@
 
         </div><!--//load_posts_container-->
 
+        
         
 
         <div class="load_more_cont">
@@ -102,11 +146,11 @@ $('.load_more_cont a').live('click', function(e)
 
 		success: function(out)
     {
-			result = $(out).find('#load_posts_container .home_post_box');
+			result = $(out).find('#other-posts .home_post_box');
 
 			nextlink = $(out).find('.load_more_cont a').attr('href');
 
-      $('#load_posts_container').append(result);
+      $('#other-posts').append(result);
 
 			if (nextlink != undefined)
       {
@@ -118,7 +162,7 @@ $('.load_more_cont a').live('click', function(e)
       {
 
 				$('.load_more_cont').remove();
-        $('#load_posts_container').append('<div class="clear"></div>');
+        $('#other-posts').append('<div class="clear"></div>');
 			}
 
       if (nextlink != undefined)
@@ -128,7 +172,7 @@ $('.load_more_cont a').live('click', function(e)
           if($(data + ":contains('home_post_box')") != '')
           {
             //alert('not found');
-            $('#load_posts_container').append('<div class="clear"></div>');        
+            $('#other-posts').append('<div class="clear"></div>');        
           }
         });
       }

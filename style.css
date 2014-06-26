@@ -14,7 +14,7 @@ body
 {
 	font-size: 12px;
 	font-family: arial, verdana, georgia;
-	color: #fff;
+	color: #000;
 }
 
 @font-face
@@ -151,7 +151,7 @@ a:hover { text-decoration:underline; color:#333; }
 	width: 768px;
 	margin: 25px auto 0;
 	text-align: center;
-	border-bottom: 4px #E5E5E5 solid;
+	border-bottom: 3px #E5E5E5 solid;
 }
 
 .intro-cont h1
@@ -197,7 +197,7 @@ a:hover { text-decoration:underline; color:#333; }
 
 
 
-/* Content */
+/* Homepage Body */
 
 #content_container
 {
@@ -209,6 +209,122 @@ a:hover { text-decoration:underline; color:#333; }
 {
 	width: 768px;
 	margin: 0 auto;
+}
+
+#other-posts
+{
+	width: 534px;
+	float: left;
+	overflow: hidden;
+	padding-top: 15px;
+	border-right: 2px #E5E5E5 solid;
+}
+
+.main-post
+{
+	border-bottom: 3px #E5E5E5 solid;
+	margin: 0;
+}
+
+.main-post-image
+{
+	margin: 0 0 10px;
+	padding: 0 0 15px;
+	border-bottom: 3px #E5E5E5 solid;
+}
+
+.main-post-text
+{
+	width: 65%;
+	float: left;
+}
+
+.main-post-tags
+{
+	width: 35%;
+	float: right;
+	text-align: right;
+}
+
+.main-post-details
+{
+	color: #000;
+	overflow: hidden;
+}
+
+.main-post-title h1
+{
+	font-family: GothamMedium, Arial;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.main-post-desc p
+{
+	font-family: GothamBook, Arial;
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.main-post-link
+{
+	width: 150px;
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+
+.main-post-link a
+{
+	color: #0061a8;
+	text-decoration: none;
+}
+
+.main-post-link a p
+{
+	float: left;
+	font-family: GothamBook, Arial;
+	font-size: 16px;
+	margin: 0px 10px 0px 0px;
+}
+
+.main-post-link a img
+{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin: 1px 0 0;
+}
+
+.main-post-tag
+{
+	overflow: hidden;
+	margin: 0 0 10px 10px;
+	display: inline-block;
+}
+
+.main-tag-left
+{
+	width: 22px;
+	height: 30px;
+	background: url('images/tag-left.png') no-repeat;
+	background-size: 100% 100%;
+	float: left;
+}
+
+.main-tag-right
+{
+	background-color: #0063a8;
+	float: left;
+	padding: 6px 10px 7px;
+}
+
+.main-tag-right a
+{
+	color: #fff;
+	font-family: GothamBook, Arial;
+	font-size: 14px;
+	text-decoration: none;
 }
 
 .home_post_box
@@ -289,6 +405,11 @@ a:hover { text-decoration:underline; color:#333; }
 	font-family: GothamMedium, Arial;
 	font-size: 16px;
 	margin: 12px 0;
+}
+
+.right-side
+{
+	float: right;
 }
 
 
@@ -464,7 +585,7 @@ html[xmlns] .slides {display: block;}
 *********************************/
 .flexslider
 {
-	margin: 0 0 60px;
+	margin: 0 0 10px;
 	background: #fff;
 	position: relative;
 	zoom: 1;
@@ -493,14 +614,46 @@ html[xmlns] .slides {display: block;}
 .flex-pauseplay a.flex-play:before { content: '\f003'; }
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
-.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav
+{
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	text-align: center;
+	border-bottom: 3px #E5E5E5 solid;
+}
+
+.flex-control-nav li
+{
+	margin: 0 6px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
 .flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
 .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
 .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
 
-.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
-.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs
+{
+	margin: 10px 0 0;
+	position: static;
+	overflow: hidden;
+	height: 68px;
+}
+
+.flex-control-thumbs li
+{
+	width: 50px;
+	float: left;
+	margin: 2px 7px 0 2px;
+	border: 2px #fff solid;
+	-moz-box-shadow:    0px 0px 1px 1px #ccc;
+	-webkit-box-shadow: 0px 0px 1px 1px #ccc;
+	box-shadow:         0px 0px 1px 1px #ccc;
+}
+
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}

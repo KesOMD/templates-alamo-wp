@@ -48,7 +48,8 @@
   $(window).load(function()
   {
     $('.flexslider').flexslider({
-      controlNav: "thumbnails"
+      controlNav: "thumbnails",
+      slideshow: false
     });
   });
   </script>
@@ -133,8 +134,13 @@
         </div>//search_cont-->
       </div>
     </div><!--//header-->
+    <?php
+    if ( is_home() ) { ?>
     <div class="intro-cont">
       <h1>Alamo on the Road</h1>
       <h2>An essential guide to driving, travel and destinations worldwide.</h2>
     </div>
+    <?php } ?>
+    
+
     <div id="content_container">
