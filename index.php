@@ -4,7 +4,21 @@
 
         <div id="load_posts_container">
 
+        <?php
+        $my_query = new WP_Query('showposts=1');
+        while ( $my_query->have_posts() ) : $my_query->the_post();
+        $do_not_duplicate = $post->ID;
+        ?>
 
+          <div class="main-post">
+            <div class="flexslider">
+              <ul class="slides">
+                <?php revconcept_get_images("$post->ID"); ?>
+              </ul>
+            </div><!--end flexslider-->
+          </div>
+
+        <?php endwhile; ?>
 
         <?php
 
@@ -27,7 +41,9 @@
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         
 
-        if(have_posts()) : while (have_posts()) : the_post(); ?>                                                                      
+        if(have_posts()) : while (have_posts()) : the_post();
+            if( $post->ID == $do_not_duplicate) continue;
+        ?>                                                                      
 
             <div class="home_post_box">
 

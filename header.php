@@ -24,6 +24,8 @@
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/main.js" type="text/javascript" charset="utf-8"></script>
 
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
+
   <script type="text/javascript">
 
   function show_post_desc(desc_num) {
@@ -40,6 +42,15 @@
 
   }
 
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+  $(window).load(function()
+  {
+    $('.flexslider').flexslider({
+      controlNav: "thumbnails"
+    });
+  });
   </script>
 
 </head>
