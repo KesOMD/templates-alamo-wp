@@ -635,6 +635,119 @@ a:hover { text-decoration:underline; color:#333; }
 
 .footer_copyright a:hover { text-decoration: underline; }
 
+/* ----- 404 page ----- */
+.error-content
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+.error-image-main
+{
+	width: inherit;
+}
+
+.error-desk
+{
+	width: 768px;
+}
+
+.error-desk img
+{
+	width: 788px;
+	height: 368px
+}
+
+.error-text
+{
+	width: 768px;
+	text-align: center;
+	border-bottom: 1px #E5E5E5 solid;
+	padding: 0 0 20px;
+	margin: 0 0 25px;
+}
+
+.error-text h1
+{
+	color: #0063a8;
+	font-family: GothamBold, "Arial Black";
+	font-size: 24px;
+}
+
+.error-text h2
+{
+	font-family: GothamBook, Arial;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 10px 0 0;
+}
+
+.recent-post-cont
+{
+	width: 768px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.recent-post-cont h2
+{
+	font-family: GothamBook, Arial;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+
+.recent-post
+{
+	width: 212px;
+	overflow: hidden;
+	float: left;
+	margin: 0;
+}
+
+.recent-image
+{
+	width: 212px;
+	height: 130px;
+}
+
+.recent-image img
+{
+	width: 212px;
+	height: 130px;
+}
+
+.recent-text
+{
+	margin: 15px 0 0 0;
+}
+
+.recent-text h3
+{
+	margin: 0;
+	font-size: 14px;
+	font-family: GothamMedium, Arial;
+	font-weight: normal;
+}
+
+.recent-text h3 a
+{
+	text-decoration: none;
+}
+
+.v-divider
+{
+	width: 1px;
+	height: 179px;
+	background-color: #ccc;
+	float: left;
+	margin: 0 32px;
+}
+
+#v-pos3
+{
+	display: none;
+}
 
 /*
  * jQuery FlexSlider v2.2.0
