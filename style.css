@@ -208,6 +208,7 @@ a:hover { text-decoration:underline; color:#333; }
 {
 	width: 768px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 #other-posts
@@ -398,7 +399,7 @@ a:hover { text-decoration:underline; color:#333; }
 .load_more_cont
 {
 	width: 768px;
-	margin: 15px auto 25px;
+	margin: 15px auto 0;
 	background-color: #0063a8;
 	float: left;
 }
