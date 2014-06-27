@@ -99,6 +99,8 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 
   add_image_size('post-gal-image', 768, 372, true);
 
+  add_image_size('pop-thumb', 212, 130, true);
+
 }
 
 
