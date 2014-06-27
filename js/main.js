@@ -1,4 +1,23 @@
 $(document).ready(function() {
+	$(window).scroll(function()
+	{
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		{
+				
+		}
+		else
+		{
+			if ($(this).scrollTop() > 730)
+			{
+				$('#rs-bar').addClass('sharing-fixed');
+			}
+			else
+			{
+				$('#rs-bar').removeClass('sharing-fixed');
+			}
+		}
+			
+	});
 
 $('img.rounded').one('load',function () {
 	var img = $(this);
