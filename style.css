@@ -73,25 +73,32 @@ a:hover { text-decoration:underline; color:#333; }
 
 #header-logo
 {
-	width: 107px;
 	height: 48px;
+	overflow: hidden;
 }
 
 #header-logo img
 {
 	float: left;
+	width: 107px;
 }
 
 .menu-arrow
 {
 	float: left;
-	margin: 20px 0 0 20px;
+	margin: 20px 0 0 10px;
 }
 
 .arrow-cont
 {
+	
 	height: 10px;
 	overflow: hidden;
+}
+
+.arrow-cont img
+{
+	width: 13px !important;
 }
 
 .logo
@@ -111,7 +118,7 @@ ul
 
 ul#logo-nav
 {
-	width: 160px;
+	width: 130px;
 	overflow: hidden;
 	float: left;
 }
@@ -125,19 +132,33 @@ ul#logo-nav li
 ul.sub_navigation
 {
 	position: absolute;
+	top: 98px;
 	display: none;
-	background-color: #f3fcff;
-	border: 1px #008acc solid;
-	margin-top: 2px;
-	width: 189px;
+	background-color: #E6E6E6;
+	border-top: 3px #999 solid;
+	border-bottom: 4px #666 solid;
+	width: 190px;
+	padding: 10px 0;
 }
 
 ul.sub_navigation li
 {
 	clear: both;
 	list-style: none;
-	padding: 10px 0 0 12px;
-	margin-left: 33px;
+	margin: 0 28px;
+}
+
+ul.sub_navigation li a
+{
+	color: #0063a9;
+	font-family: GothamBook, Arial;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+ul.sub_navigation li a p
+{
+	margin: 5px 0;
 }
 
 .dropdown

@@ -82,13 +82,14 @@
             </a>
             
             <ul class="sub_navigation">
-              <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><div class="whi"><p>Main Site</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><div class="bl"><p>About Us</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><div class="whi"><p>Contact Us</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><div class="bl"><p>Privacy Policy</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><div class="whi"><p>Cookie Policy</p></div></a></li>
+              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Car hire home"><p>Car hire home</p></a></li>
+              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Reservations"><p>Reservations</p></a></li>
+              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Deals"><p>Deals</p></a></li>
+              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Locations"><p>Locations</p></a></li>
+              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Cars"><p>Cars</p></a></li>
+              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Amend reservation"><p>Amend reservation</p></a></li>
             </ul>
-            
+
           </li>
         </ul>
         <div class="header-button-cont">

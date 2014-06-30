@@ -92,12 +92,12 @@ $('body').ready(function()
 			*/
 			if (!isOpen)
 			{
-				$('.arrow-cont').css("margin-top", "0");
+				$('.arr').css("margin-top", "-10px");
 				isOpen = true;
 			}
 			else
 			{
-				$('.arrow-cont').css("margin-top", "-10px");
+				$('.arr').css("margin-top", "0px");
 				isOpen = false;
 			};
 				
