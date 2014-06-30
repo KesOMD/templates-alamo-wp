@@ -74,3 +74,33 @@ $('img.rounded').one('load',function () {
 });
 	
 });
+
+$('body').ready(function()
+{
+	var isOpen = false;
+	$('.dropdown').click(function()
+		{
+			console.log("clicked");
+			$(this).find('.sub_navigation').slideToggle( "fast" );
+			/*
+			$('.bd-container1').slideUp( "fast" );
+			$('.bd-container2').slideUp( "fast" );
+			$('.bd-container3').slideUp( "fast" );
+			$('.bd-container4').slideUp( "fast" );
+			
+			$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+			*/
+			if (!isOpen)
+			{
+				$('.arrow-cont').css("margin-top", "0");
+				isOpen = true;
+			}
+			else
+			{
+				$('.arrow-cont').css("margin-top", "-10px");
+				isOpen = false;
+			};
+				
+		}
+	);
+});

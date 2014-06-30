@@ -71,13 +71,6 @@ a:hover { text-decoration:underline; color:#333; }
 	margin: 0 auto;
 }
 
-#logo-nav
-{
-	width: 160px;
-	overflow: hidden;
-	float: left;
-}
-
 #header-logo
 {
 	width: 107px;
@@ -106,6 +99,45 @@ a:hover { text-decoration:underline; color:#333; }
 	float: left;
 	width: inherit;
 	height: inherit;
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	z-index: 100;
+}
+
+ul#logo-nav
+{
+	width: 160px;
+	overflow: hidden;
+	float: left;
+}
+
+ul#logo-nav li
+{
+	float: left;
+	cursor: pointer;
+}
+
+ul.sub_navigation
+{
+	position: absolute;
+	display: none;
+	background-color: #f3fcff;
+	border: 1px #008acc solid;
+	margin-top: 2px;
+	width: 189px;
+}
+
+ul.sub_navigation li
+{
+	clear: both;
+	list-style: none;
+	padding: 10px 0 0 12px;
+	margin-left: 33px;
 }
 
 .dropdown
@@ -214,6 +246,7 @@ a:hover { text-decoration:underline; color:#333; }
 #other-posts
 {
 	width: 534px;
+	min-height: 534px;
 	float: left;
 	overflow: hidden;
 	padding-top: 15px;
@@ -747,6 +780,47 @@ a:hover { text-decoration:underline; color:#333; }
 #v-pos3
 {
 	display: none;
+}
+
+/* ----- Category Page ----- */
+.cat-header
+{
+	width: 768px;
+	overflow: hidden;
+	text-align: center;
+	border-bottom: 2px #E5E5E5 solid;
+}
+
+.cat-desc
+{
+	width: 522px;
+	margin: 0 auto;
+}
+
+.cat-desc p
+{
+	font-family: GothamBook, Arial;
+	font-size: 17px;
+}
+
+.cat-name
+{
+	width: inherit;
+}
+
+.cat-name h1
+{
+	color: #0061a8;
+	font-family: GothamBold, "Arial Black";
+	font-size: 24px;
+	font-weight: normal;
+	margin: 15px 0;
+}
+
+.no-posts-here
+{
+	font-family: GothamBook, Arial;
+	font-size: 17px;
 }
 
 /*

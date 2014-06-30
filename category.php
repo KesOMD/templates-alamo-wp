@@ -1,188 +1,157 @@
-<?php get_header(); ?>
-
-
-
-        <div id="load_posts_container">
-
-
-
-        <?php
-
-        $x = 0;
-
-        
-
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-        if($paged > 1) 
-
-          $y = (0 + (($paged-1) * 12));
-
-        else
-
-          $y = 0;
-
-global $wp_query;
-$args = array_merge( $wp_query->query, array( 'posts_per_page' => 9 ) );
-query_posts( $args );
-        while (have_posts()) : the_post(); ?>                                                                      
-
-        
-
-            <?php if($x == 2) { ?>
-
-            <div class="home_post_box home_post_box_last" onmouseover="show_post_desc(<?php echo $y; ?>)" onmouseout="hide_post_desc(<?php echo $y; ?>)">
-
-            <?php } else { ?>
-
-            <div class="home_post_box" onmouseover="show_post_desc(<?php echo $y; ?>)" onmouseout="hide_post_desc(<?php echo $y; ?>)">
-
-            <?php } ?>
-
-            
-
-                <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/images/blog-image.jpg" />-->
-
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image', 'class' => 'rounded')); ?></a>
-
-                
-
-                <div class="home_post_desc" id="home_post_desc<?php echo $y; ?>">
-
-                    <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,225)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo $display_arr_content . '...'; ?>
-
-                </div><!--//home_post_desc-->
-
-                
-
-                <div class="home_post_title_cont">
-
-                    <h3><?php the_title(); ?></h3>
-
-                    <h4><?php the_category(', '); ?></h4>
-
-                </div><!--//home_post_title_cont-->
-
-            </div><!--//home_post_box-->
-
-        
-
-            <?php if($x == 2) { $x = -1; /*echo '<div class="clear"></div>';*/ } ?>
-
-        
-
-        <?php $x++; $y++; ?>
-
-        <?php endwhile; ?>        
-
-        <?php wp_reset_query(); ?>        
-
-        
-
-        <div class="clear"></div>
-
-        
-
-        </div><!--//load_posts_container-->
-
-        
-
-        <div class="load_more_cont">
-
-            <p align="center"><span class="load_more_text"><?php next_posts_link('<img src="' . get_bloginfo('stylesheet_directory') . '/images/load-more-image.png" />') ?></span></p>
-
-        </div><!--//load_more_cont-->
-
-        
-
-        
-
-<script type="text/javascript">
-
-// Ajax-fetching "Load more posts"
-
-$('.load_more_cont a').live('click', function(e) {
-
-	e.preventDefault();
-
-	//$(this).addClass('loading').text('Loading...');
-
-        //$('.load_more_text a').html('Loading...');
-
-	$.ajax({
-
-		type: "GET",
-
-		url: $(this).attr('href') + '#main_container',
-
-		dataType: "html",
-
-		success: function(out) {
-
-			result = $(out).find('#load_posts_container .home_post_box');
-
-			nextlink = $(out).find('.load_more_cont a').attr('href');
-
-                        //alert(nextlink);
-
-			//$('#boxes').append(result).masonry('appended', result);
-
-                    $('#load_posts_container').append(result);
-
-			//$('.fetch a').removeClass('loading').text('Load more posts');
-
-                        //$('.load_more_text a').html('Load More');
-
-                        
-
-                        
-
-			if (nextlink != undefined) {
-
-				$('.load_more_cont a').attr('href', nextlink);
-
-			} else {
-
-				$('.load_more_cont').remove();
-
-                                $('#load_posts_container').append('<div class="clear"></div>');
-
-                              //  $('.load_more_cont').css('visibilty','hidden');
-
-			}
-
-
-
-                    if (nextlink != undefined) {
-
-                        $.get(nextlink, function(data) {
-
-                          //alert(nextlink);
-
-                          if($(data + ":contains('home_post_box')") != '') {
-
-                            //alert('not found');
-
-                              //                      $('.load_more_cont').remove();
-
-                                                    $('#load_posts_container').append('<div class="clear"></div>');        
-
-                          }
-
-                        });                        
-
-                    }
-
-                        
-
-		}
-
-	});
-
-});
-
-</script>        
-
-        
-
+<?php get_header(); ?>
+
+    <div id="load_posts_container">
+
+        <div class="cat-header">
+            <div class="cat-desc">
+                <p>You results for...</p>
+            </div>
+            <div class="cat-name">
+                <h1><?php single_cat_title(); ?></h1>
+            </div>
+            <div class="cat-desc">
+                <p><?php echo category_description(); ?></p>
+            </div>
+        </div>
+
+        <div id="other-posts">
+        <?php
+
+        global $wp_query;
+
+        $args = array_merge( $wp_query->query, array( 'posts_per_page' => 9 ) );
+
+        query_posts( $args );
+
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        
+
+        if(have_posts()) : while (have_posts()) : the_post(); ?>                                                                      
+
+            <div class="home_post_box">
+
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-blog-image',array('alt' => 'post image')); ?></a>
+
+              <div class="home_post_title_cont">
+                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+              </div><!--//home_post_title_cont-->
+
+              <div class="home_post_desc">
+                <p>
+                  <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
+                </p>
+              </div><!--//home_post_desc-->
+              <div class="main-post-link home-post-link">
+                <a href="<?php the_permalink(); ?>">
+                  <p>Read More</p>
+                  <img src="<?php bloginfo('stylesheet_directory'); ?>/images/read-more-arrow.png" />
+                </a>
+              </div>
+
+            </div><!--//home_post_box-->
+
+        <?php endwhile; else: ?>
+        <p class="no-posts-here">There are no posts in this category</p>
+        <?php endif; ?>
+
+
+        <?php wp_reset_query(); ?>       
+
+        </div><!--end other-posts-->
+
+        <div class="right-side" id="rs-bar">
+          <div class ="email-signup">
+            <div class="email-header">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="email-text">
+              <p>Sign up for the latest news<br />from Alamo.</p>
+            </div>
+          </div>
+
+          <div class="pop-posts">
+            <div class="email-header">
+              <h3>Popular posts</h3>
+            </div>
+            <?php
+            if (function_exists('wpp_get_mostpopular'))
+              wpp_get_mostpopular("limit=2&range='all'&stats_author=1&excerpt_length=100&stats_category=1&thumbnail_width=212&thumbnail_height=130&wpp_start='<div class=\"pop-container\">'&wpp_end=''&post_html='<div class=\"pop-post\"><a href={url}>{thumb}</a><div class=\"pop-title\"><a href={url}><h3>{text_title}</h3></a></div></div>'");
+            ?>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
+        
+
+        </div><!--//load_posts_container-->
+
+        
+        
+
+        <div class="load_more_cont">
+            <?php next_posts_link('<div class="load-more-button"><p>Load more</p></div>', 0); ?>
+        </div><!--//load_more_cont-->
+
+        
+
+        
+
+<script type="text/javascript">
+
+// Ajax-fetching "Load more posts"
+
+$('.load_more_cont a').live('click', function(e)
+{
+
+    e.preventDefault();
+
+    $.ajax({
+
+        type: "GET",
+
+        url: $(this).attr('href') + '#main_container',
+
+        dataType: "html",
+
+        success: function(out)
+    {
+            result = $(out).find('#other-posts .home_post_box');
+
+            nextlink = $(out).find('.load_more_cont a').attr('href');
+
+      $('#other-posts').append(result);
+
+            if (nextlink != undefined)
+      {
+
+                $('.load_more_cont a').attr('href', nextlink);
+
+            }
+      else
+      {
+
+                $('.load_more_cont').remove();
+        $('#other-posts').append('<div class="clear"></div>');
+            }
+
+      if (nextlink != undefined)
+      {
+        $.get(nextlink, function(data)
+        {
+          if($(data + ":contains('home_post_box')") != '')
+          {
+            //alert('not found');
+            $('#other-posts').append('<div class="clear"></div>');        
+          }
+        });
+      }
+        }
+    });
+});
+
+</script>        
+
+</div>        
+
 <?php get_footer(); ?>            
