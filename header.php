@@ -93,12 +93,21 @@
           </li>
         </ul>
         <div class="header-button-cont">
-
-          <div class="header-button" id="home">
-            <a href="<?php bloginfo('url'); ?>">
-              <p>Travel Home</p>
-            </a> 
-          </div>
+          <?php
+          if ( is_home() ) { ?>
+            <div class="header-button-home" id="home">
+              <a href="<?php bloginfo('url'); ?>">
+                <p>Travel Home</p>
+              </a> 
+            </div>
+          <?php } else { ?>
+            <div class="header-button" id="home">
+              <a href="<?php bloginfo('url'); ?>">
+                <p>Travel Home</p>
+              </a> 
+            </div>
+          <?php } ?>
+          
 
           <div class="header-button" id="act">
             <a href="<?php bloginfo('url'); ?>">

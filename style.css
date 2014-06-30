@@ -176,7 +176,6 @@ ul.sub_navigation li a p
 {
 	float: left;
 	margin-left: 38px;
-
 }
 
 .header-button a
@@ -191,6 +190,26 @@ ul.sub_navigation li a p
 }
 
 .header-button a p
+{
+	font-family: GothamMedium, Arial;
+	font-size: 16px;
+	margin: 0px;
+	padding-top: 15px;
+}
+
+.header-button-home
+{
+	float: left;
+	margin-left: 38px;
+}
+
+.header-button-home a
+{
+	text-decoration: none;
+	color: #0061a8;
+}
+
+.header-button-home a p
 {
 	font-family: GothamMedium, Arial;
 	font-size: 16px;
