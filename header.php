@@ -106,19 +106,19 @@
           
 
           <div class="header-button" id="act">
-            <a href="<?php bloginfo('url'); ?>">
+            <a>
               <p>Activities</p>
             </a> 
           </div>
 
           <div class="header-button" id="dest">
-            <a href="<?php bloginfo('url'); ?>">
+            <a>
               <p>Destinations</p>
             </a> 
           </div>
 
           <div class="header-button" id="search">
-            <a href="<?php bloginfo('url'); ?>">
+            <a>
               <p>Search</p>
             </a> 
           </div>
@@ -131,15 +131,36 @@
         </div>
         
         <div class="clear"></div>
-        <!--
+        
+      </div><!-- header-button-cont -->
+
+    </div><!--//header-->
+
+    <div class="dropdown-container">
+      <div class="dropdowns" id="search-dropdown">
         <div class="search_cont">
           <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-            <input type="text" name="s" id="s" />
+            <input type="text" name="s" id="s" value="Enter activity or destination here" onfocus="if ( this.value == 'Enter activity or destination here' ) { this.value = '' }" onblur="if (this.value == '') { this.value = 'Enter activity or destination here' }">
             <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-icon.png" class="search_icon" BORDER="0" ALT="Submit Form">
           </form>
-        </div>//search_cont-->
-      </div>
-    </div><!--//header-->
+        </div><!-- search_cont -->
+      </div><!-- search-dropdown -->
+
+      <div class="dropdowns" id="activities-dropdown">
+        <div class="act-container">
+          <div class="grey-divide"></div>
+          <div class="act-button">
+            <a href="<?php echo get_tag_link(get_term_by( 'slug', 'food', 'post_tag' )->term_id ); ?>">Food</a>
+          </div>
+          <div class="grey-divide"></div>
+          <div class="grey-divide"></div>
+          <div class="grey-divide"></div>
+          <div class="grey-divide"></div>
+          <div class="grey-divide"></div>
+          <div class="grey-divide"></div>
+        </div>
+      </div><!-- act-container -->
+    </div><!-- activities-dropdown -->
     <?php
     if ( is_home() ) { ?>
     <div class="intro-cont">

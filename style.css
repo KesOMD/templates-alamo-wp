@@ -182,6 +182,7 @@ ul.sub_navigation li a p
 {
 	text-decoration: none;
 	color: #000;
+	cursor: pointer;
 }
 
 .header-button a:hover
@@ -244,12 +245,64 @@ ul.sub_navigation li a p
 
 .social_icons li { float: left; margin-left: 10px; }
 
-.search_cont { float: right; margin-top: 15px; position: relative; }
+.dropdown-container
+{
+	width: inherit;
+	overflow: hidden;
+}
 
-.search_cont input[type=text] { width: 176px; height: 23px; border: 1px solid #E5E5E5; }
+.dropdowns
+{
+	display: none;
+	position: absolute;
+	width: inherit;
+	top: 98px;
+	left: 0;
+	background-color: #f2f2f2;
+	border-bottom: 5px #0063a8 solid;
+	z-index: 99;
+}
 
-.search_icon { position: absolute; top: 7px; right: 8px; }
+.search_cont
+{
+	width: 358px;
+	margin: 15px auto;
+	position: relative;
+}
 
+.search_cont input[type=text]
+{
+	background-color: #f2f2f2;
+	color: #000;
+	font-family: GothamMedium, Arial;
+	font-size: 20px;
+	width: 330px;
+	height: 30px;
+	border: none;
+}
+
+.search_icon
+{
+	position: relative;
+	top: 2px;
+	margin: 0 0 0 6px;
+	width: 19px;
+	height: 18px;
+}
+
+.act-container
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+.grey-divide
+{
+	width: 1px;
+	height: 136px;
+	background-color: #d3d3d3;
+	float: left;
+}
 
 
 #menu_container { border-top: 1px dotted #DDDDDD; border-bottom: 5px solid #DDDDDD; padding: 0px 28px; }
