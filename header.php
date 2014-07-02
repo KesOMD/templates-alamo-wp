@@ -82,12 +82,12 @@
             </a>
             
             <ul class="sub_navigation">
-              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Car hire home"><p>Car hire home</p></a></li>
-              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Reservations"><p>Reservations</p></a></li>
-              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Deals"><p>Deals</p></a></li>
-              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Locations"><p>Locations</p></a></li>
-              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Cars"><p>Cars</p></a></li>
-              <li><a href="http://www.somelink.co.uk/" target="_blank" alt="Amend reservation"><p>Amend reservation</p></a></li>
+              <li><a href="http://www.alamo.co.uk/" target="_blank" alt="Car hire home"><p>Car hire home</p></a></li>
+              <li><a href="http://www.alamo.co.uk/RatesAndReservation/740/uk/RatesReservation" target="_blank" alt="Reservations"><p>Reservations</p></a></li>
+              <li><a href="http://www.alamo.co.uk/Content/740/uk/hotdeals" target="_blank" alt="Deals"><p>Deals</p></a></li>
+              <li><a href="http://www.alamo.co.uk/Locations/740/uk" target="_blank" alt="Locations"><p>Locations</p></a></li>
+              <li><a href="http://www.alamo.co.uk/Content/740/uk/Fleet/main?selectedCountry=GB" target="_blank" alt="Cars"><p>Cars</p></a></li>
+              <li><a href="http://www.alamo.co.uk/Content/740/uk/ExistingReservation" target="_blank" alt="Amend reservation"><p>Amend reservation</p></a></li>
             </ul>
 
           </li>

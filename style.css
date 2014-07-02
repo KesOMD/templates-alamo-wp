@@ -919,7 +919,7 @@ a.general span
 
 .footer_widgets_cont
 {
-	width: 1000px;
+	width: 768px;
 	margin: 25px auto 0;
 	padding: 0;
 	overflow: hidden;
@@ -929,13 +929,14 @@ a.general span
 .footer-logo-cont
 {
 	overflow: hidden;
-	width: 130px;
+	width: 136px;
 	float: left;
 }
 
 .footer-logo-cont p
 {
 	color: #fff;
+	font-family: GothamBook, Arial;
 	float: left;
 }
 
@@ -950,6 +951,29 @@ a.general span
 	height: 46px;
 }
 
+.footer-links-cont
+{
+	width: 632px;
+	float: left;
+}
+
+.footer-links-cont a
+{
+	color: #fff;
+	font-family: GothamBook, Arial;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.footer-links-cont a p
+{
+	margin: 0 0 5px;
+}
+
+.footer-links
+{
+	float: left;
+}
 
 .footer_box
 {
@@ -957,6 +981,21 @@ a.general span
 	width: 320px;
 	margin-right: 20px; 
 	margin-bottom: 20px;
+}
+
+#fl-col1
+{
+	margin: 0 0 0 83px;
+}
+
+#fl-col2
+{
+	margin: 0 0 0 104px;
+}
+
+#fl-col3
+{
+	float: right;
 }
 
 .footer_box_last { margin-right: 0; }
