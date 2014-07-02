@@ -221,8 +221,11 @@
             <a href="<?php echo $cat_oth_URL; ?>" title="<?php echo $cat_uk->name ?>"><p><?php echo $cat_oth->name ?></p></a>
           </div>
           <div class="dest-divide"></div>
+          <div class="close-container" id="dest-close">
+            <div class="close-btn"></div>
+          </div>
         </div><!-- dest-container -->
-        <div class="close-container"></div>
+        
       </div><!-- dest-dropdown -->
     </div><!-- dropdown-container -->
     <?php

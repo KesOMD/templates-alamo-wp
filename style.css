@@ -484,15 +484,14 @@ a.general span
 	margin: 0 0 5px;
 }
 
+.cat-item a
+{
+	color: #000;
+}
+
 #uk-cat
 {
 	width: 310px;
-}
-
-.close-container
-{
-	width: 768px;
-	margin: 0 auto;
 }
 
 #oth-cat
@@ -505,6 +504,25 @@ a.general span
 {
 	color: #000;
 	margin-top: 33px;
+}
+
+.close-container
+{
+	width: 768px;
+	margin: 25px 0;
+	float: left;
+}
+
+.close-btn
+{
+	display: block;
+	cursor: pointer;
+	width: 33px;
+	height: 26px;
+	margin: 0 auto;
+	background: url(images/dropdown-close.png) no-repeat 0 0;
+	text-decoration: none;
+	background-size: 100% 100% !important;
 }
 
 #menu_container { border-top: 1px dotted #DDDDDD; border-bottom: 5px solid #DDDDDD; padding: 0px 28px; }

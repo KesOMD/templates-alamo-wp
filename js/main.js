@@ -161,4 +161,11 @@ $('body').ready(function()
 		}
 
 	);
+
+	$('#dest-close').click(function()
+		{
+			$('#dest-dropdown').slideUp( "fast" );
+		}
+
+	);
 });
