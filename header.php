@@ -150,17 +150,81 @@
         <div class="act-container">
           <div class="grey-divide"></div>
           <div class="act-button">
-            <a href="<?php echo get_tag_link(get_term_by( 'slug', 'food', 'post_tag' )->term_id ); ?>">Food</a>
+            <a class="food" href="<?php echo get_tag_link(get_term_by( 'slug', 'food', 'post_tag' )->term_id ); ?>"><span>FOOD</span></a>
           </div>
           <div class="grey-divide"></div>
+          <div class="act-button">
+            <a class="adventure" href="<?php echo get_tag_link(get_term_by( 'slug', 'adventure', 'post_tag' )->term_id ); ?>"><span>ADVENTURE</span></a>
+          </div>
           <div class="grey-divide"></div>
+          <div class="act-button">
+            <a class="sport" href="<?php echo get_tag_link(get_term_by( 'slug', 'sport', 'post_tag' )->term_id ); ?>"><span>SPORT</span></a>
+          </div>
           <div class="grey-divide"></div>
+          <div class="act-button">
+            <a class="lifestyle" href="<?php echo get_tag_link(get_term_by( 'slug', 'lifestyle', 'post_tag' )->term_id ); ?>"><span>LIFESTYLE</span></a>
+          </div>
           <div class="grey-divide"></div>
+          <div class="act-button">
+            <a class="entertainment" href="<?php echo get_tag_link(get_term_by( 'slug', 'entertainment', 'post_tag' )->term_id ); ?>"><span>ENTERTAINMENT</span></a>
+          </div>
           <div class="grey-divide"></div>
+          <div class="act-button">
+            <a class="general" href="<?php echo get_tag_link(get_term_by( 'slug', 'general', 'post_tag' )->term_id ); ?>"><span>GENERAL</span></a>
+          </div>
           <div class="grey-divide"></div>
         </div>
-      </div><!-- act-container -->
-    </div><!-- activities-dropdown -->
+      </div><!-- activities-dropdown -->
+
+      <div class="dropdowns" id="dest-dropdown">
+        <div class="dest-container">
+          <div class="dest-divide"></div>
+          <div class="dest-list-cont">
+            <?php
+            $cat_us = get_category_by_slug( 'united-states' );
+            $cat_us_URL = get_category_link( $cat_us->term_id );
+            ?>
+            <a href="<?php echo $cat_us_URL; ?>" title="<?php echo $cat_us->name ?>"><p><?php echo $cat_us->name ?></p></a>
+            <ul class="bycategories">
+            <?php
+            $categories = get_categories( array( 'parent' => $cat_us->term_id, 'hide_empty' => 0 ) );
+            foreach ( $categories as $category )
+            {
+                echo '<li class="cat-item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . ' ' . '</a></li>';
+            }
+            ?>
+            </ul>
+          </div>
+          <div class="dest-divide"></div>
+          <div class="dest-list-cont" id="uk-cat">
+            <?php
+            $cat_uk = get_category_by_slug( 'united-kingdom' );
+            $cat_uk_URL = get_category_link( $cat_us->term_id );
+            ?>
+            <a href="<?php echo $cat_uk_URL; ?>" title="<?php echo $cat_uk->name ?>"><p><?php echo $cat_uk->name ?></p></a>
+            <ul class="bycategories">
+            <?php
+            $categories = get_categories( array( 'parent' => $cat_uk->term_id, 'hide_empty' => 0 ) );
+            foreach ( $categories as $category )
+            {
+                echo '<li class="cat-item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . ' ' . '</a></li>';
+            }
+            ?>
+            </ul>
+          </div>
+          <div class="dest-divide"></div>
+          <div class="dest-list-cont" id="oth-cat">
+            <?php
+            $cat_oth = get_category_by_slug( 'other-destinations' );
+            $cat_oth_URL = get_category_link( $cat_oth->term_id );
+            ?>
+            <a href="<?php echo $cat_oth_URL; ?>" title="<?php echo $cat_uk->name ?>"><p><?php echo $cat_oth->name ?></p></a>
+          </div>
+          <div class="dest-divide"></div>
+        </div><!-- dest-container -->
+        <div class="close-container"></div>
+      </div><!-- dest-dropdown -->
+    </div><!-- dropdown-container -->
     <?php
     if ( is_home() ) { ?>
     <div class="intro-cont">

@@ -304,6 +304,208 @@ ul.sub_navigation li a p
 	float: left;
 }
 
+.act-button
+{
+	float: left;
+}
+
+.act-button a
+{
+	text-decoration: none;
+	background-size: 200% 100% !important;
+}
+
+.act-button a span
+{
+	display: inline-block;
+	font-family: GothamBook, Arial;
+	font-size: 14px;
+
+}
+
+a.food
+{
+	display: block;
+	width: 66px;
+	height: 43px;
+	margin: 35px 25px 0;
+	background: url(images/food-icon.png) no-repeat 0 0;
+}
+
+a.food:hover
+{
+	background-position: -66px 0;
+}
+
+a.food span
+{
+	margin: 64px 0 0 12px;
+}
+
+a.adventure
+{
+	display: block;
+	width: 58px;
+	height: 55px;
+	margin: 29px 33px 0;
+	background: url(images/adventure-icon.png) no-repeat 0 0;
+}
+
+a.adventure:hover
+{
+	background-position: -58px 0;
+}
+
+a.adventure span
+{
+	margin: 70px 0 0 -16px;
+}
+
+a.sport
+{
+	display: block;
+	width: 56px;
+	height: 39px;
+	margin: 40px 26px 0;
+	background: url(images/sports-icon.png) no-repeat 0 0;
+}
+
+a.sport:hover
+{
+	background-position: -56px 0;
+}
+
+a.sport span
+{
+	margin: 58px 0 0 4px;
+}
+
+a.lifestyle
+{
+	display: block;
+	width: 87px;
+	height: 53px;
+	margin: 31px 23px 0 24px;
+	background: url(images/lifestyle-icon.png) no-repeat 0 0;
+}
+
+a.lifestyle:hover
+{
+	background-position: -87px 0;
+}
+
+a.lifestyle span
+{
+	margin: 66px 0 0 6px;
+}
+
+a.entertainment
+{
+	display: block;
+	width: 49px;
+	height: 52px;
+	margin: 33px 53px 0;
+	background: url(images/entertainment-icon.png) no-repeat 0 0;
+}
+
+a.entertainment:hover
+{
+	background-position: -49px 0;
+}
+
+a.entertainment span
+{
+	margin: 64px 0 0 -36px;
+}
+
+a.general
+{
+	display: block;
+	width: 55px;
+	height: 55px;
+	margin: 35px 35px 0 34px;
+	background: url(images/general-icon.png) no-repeat 0 0;
+}
+
+a.general:hover
+{
+	background-position: -55px 0;
+}
+
+a.general span
+{
+	margin: 62px 0 0 -7px;
+}
+
+.dest-container
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+.dest-divide
+{
+	width: 1px;
+	height: 224px;
+	margin: 50px 0 0 0;
+	background-color: #d3d3d3;
+	float: left;
+}
+
+.dest-list-cont
+{
+	width: 219px;
+	margin: 23px 0 0 0;
+	overflow: hidden;
+	float: left;
+}
+
+.dest-list-cont a
+{
+	text-decoration: none;
+	font-family: GothamMedium, Arial;
+	font-size: 14px;
+}
+
+.dest-list-cont a p
+{
+	color: #0063a8;
+	margin: 0 0 16px;
+	padding: 0 0 0 50px;
+}
+
+.bycategories
+{
+	padding: 0 0 0 50px;
+}
+
+.cat-item
+{
+	margin: 0 0 5px;
+}
+
+#uk-cat
+{
+	width: 310px;
+}
+
+.close-container
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+#oth-cat
+{
+	width: 235px;
+	min-height: 253px;
+}
+
+#oth-cat a p
+{
+	color: #000;
+	margin-top: 33px;
+}
 
 #menu_container { border-top: 1px dotted #DDDDDD; border-bottom: 5px solid #DDDDDD; padding: 0px 28px; }
 
