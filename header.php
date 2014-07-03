@@ -20,7 +20,7 @@
 
 <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/main.js" type="text/javascript" charset="utf-8"></script>
 
@@ -124,7 +124,12 @@
           </div>
 
           <div class="header-button" id="about">
-            <a href="<?php bloginfo('url'); ?>">
+            <?php
+            $aboutpage = get_page_by_title( "About Alamo", "ARRAY_N" );
+            $aboutpageID = $aboutpage[0];
+            $aboutpageURL = get_page_link( $aboutpageID );
+            ?>
+            <a href="<?php echo $aboutpageURL; ?>">
               <p>About</p>
             </a> 
           </div>

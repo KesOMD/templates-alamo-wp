@@ -221,7 +221,7 @@ ul.sub_navigation li a p
 .intro-cont
 {
 	width: 768px;
-	margin: 25px auto 0;
+	margin: 25px auto 15px;
 	text-align: center;
 	border-bottom: 3px #E5E5E5 solid;
 }
@@ -545,7 +545,7 @@ a.general span
 
 #content_container
 {
-	margin: 15px 0 0 0;
+	margin: 0;
 	width: 100%;
 }
 
@@ -812,6 +812,36 @@ a.general span
 	margin: 10px 0;
 }
 
+.email-button
+{
+	width: inherit;
+	overflow: hidden;
+	text-align: right;
+}
+
+.email-button a
+{
+	color: #0061a8;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.email-button a p
+{
+	float: left;
+	font-family: GothamBook, Arial;
+	font-size: 16px;
+	margin: 0 10px 0 0;
+}
+
+.email-button a img
+{
+	float: left;
+	width: 17px;
+	width: 17px;
+	margin: 1px 0 0;
+}
+
 .pop-posts
 {
 	width: 212px;
@@ -1020,161 +1050,6 @@ a.general span
 
 .footer_copyright a:hover { text-decoration: underline; }
 
-/* ----- 404 page ----- */
-.error-content
-{
-	width: 768px;
-	margin: 0 auto;
-}
-
-.error-image-main
-{
-	width: inherit;
-}
-
-.error-desk
-{
-	width: 768px;
-}
-
-.error-desk img
-{
-	width: 788px;
-	height: 368px
-}
-
-.error-text
-{
-	width: 768px;
-	text-align: center;
-	border-bottom: 1px #E5E5E5 solid;
-	padding: 0 0 20px;
-	margin: 0 0 25px;
-}
-
-.error-text h1
-{
-	color: #0063a8;
-	font-family: GothamBold, "Arial Black";
-	font-size: 24px;
-}
-
-.error-text h2
-{
-	font-family: GothamBook, Arial;
-	font-size: 18px;
-	font-weight: normal;
-	margin: 10px 0 0;
-}
-
-.recent-post-cont
-{
-	width: 768px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.recent-post-cont h2
-{
-	font-family: GothamBook, Arial;
-	font-size: 18px;
-	font-weight: normal;
-	margin: 0 0 20px;
-}
-
-.recent-post
-{
-	width: 212px;
-	overflow: hidden;
-	float: left;
-	margin: 0;
-}
-
-.recent-image
-{
-	width: 212px;
-	height: 130px;
-}
-
-.recent-image img
-{
-	width: 212px;
-	height: 130px;
-}
-
-.recent-text
-{
-	margin: 15px 0 0 0;
-}
-
-.recent-text h3
-{
-	margin: 0;
-	font-size: 14px;
-	font-family: GothamMedium, Arial;
-	font-weight: normal;
-}
-
-.recent-text h3 a
-{
-	text-decoration: none;
-}
-
-.v-divider
-{
-	width: 1px;
-	height: 179px;
-	background-color: #ccc;
-	float: left;
-	margin: 0 32px;
-}
-
-#v-pos3
-{
-	display: none;
-}
-
-/* ----- Category Page ----- */
-.cat-header
-{
-	width: 768px;
-	overflow: hidden;
-	text-align: center;
-	border-bottom: 2px #E5E5E5 solid;
-}
-
-.cat-desc
-{
-	width: 522px;
-	margin: 0 auto;
-}
-
-.cat-desc p
-{
-	font-family: GothamBook, Arial;
-	font-size: 17px;
-}
-
-.cat-name
-{
-	width: inherit;
-}
-
-.cat-name h1
-{
-	color: #0061a8;
-	font-family: GothamBold, "Arial Black";
-	font-size: 24px;
-	font-weight: normal;
-	margin: 15px 0;
-}
-
-.no-posts-here
-{
-	font-family: GothamBook, Arial;
-	font-size: 17px;
-}
-
 /*
  * jQuery FlexSlider v2.2.0
  * http://www.woothemes.com/flexslider/
@@ -1304,6 +1179,204 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+/* ----- 404 page ----- */
+.error-content
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+.error-image-main
+{
+	width: inherit;
+}
+
+.error-desk
+{
+	width: 768px;
+}
+
+.error-desk img
+{
+	width: 788px;
+	height: 368px
+}
+
+.error-text
+{
+	width: 768px;
+	text-align: center;
+	border-bottom: 1px #E5E5E5 solid;
+	padding: 0 0 20px;
+	margin: 0 0 25px;
+}
+
+.error-text h1
+{
+	color: #0063a8;
+	font-family: GothamBold, "Arial Black";
+	font-size: 24px;
+}
+
+.error-text h2
+{
+	font-family: GothamBook, Arial;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 10px 0 0;
+}
+
+.recent-post-cont
+{
+	width: 768px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.recent-post-cont h2
+{
+	font-family: GothamBook, Arial;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+
+.recent-post
+{
+	width: 212px;
+	overflow: hidden;
+	float: left;
+	margin: 0;
+}
+
+.recent-image
+{
+	width: 212px;
+	height: 130px;
+}
+
+.recent-image img
+{
+	width: 212px;
+	height: 130px;
+}
+
+.recent-text
+{
+	margin: 15px 0 0 0;
+}
+
+.recent-text h3
+{
+	margin: 0;
+	font-size: 15px;
+	font-family: GothamMedium, Arial;
+	font-weight: normal;
+}
+
+.recent-text h3 a
+{
+	text-decoration: none;
+}
+
+.v-divider
+{
+	width: 1px;
+	height: 179px;
+	background-color: #ccc;
+	float: left;
+	margin: 0 32px;
+}
+
+#v-pos3
+{
+	display: none;
+}
+
+/* ----- About Page ----- */
+
+.about-text-cont
+{
+	width: inherit;
+	margin: 0 0 20px;
+}
+
+.about-text-cont hr
+{
+	color: #ccc;
+}
+
+.about-header
+{
+	width: inherit;
+	margin: 15px 0;
+}
+
+.about-header h1
+{
+	color: #0063a8;
+	font-family: GothamBold, "Arial Black";
+	font-weight: normal;
+	margin: 0;
+}
+
+.about-text
+{
+	margin: 20px 0;
+	width: inherit;
+}
+
+.about-text p
+{
+	margin: 0;
+	font-family: GothamBook, Arial;
+	font-size: 17px;
+	line-height: 23px;
+}
+
+/* ----- Category Page ----- */
+
+.cat-header
+{
+	width: 768px;
+	overflow: hidden;
+	text-align: center;
+	border-bottom: 2px #E5E5E5 solid;
+}
+
+.cat-desc
+{
+	width: 522px;
+	margin: 0 auto;
+}
+
+.cat-desc p
+{
+	font-family: GothamBook, Arial;
+	font-size: 17px;
+}
+
+.cat-name
+{
+	width: inherit;
+}
+
+.cat-name h1
+{
+	color: #0061a8;
+	font-family: GothamBold, "Arial Black";
+	font-size: 24px;
+	font-weight: normal;
+	margin: 15px 0;
+}
+
+.no-posts-here
+{
+	font-family: GothamBook, Arial;
+	font-size: 17px;
+}
+
 
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
