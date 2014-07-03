@@ -7,7 +7,7 @@ $(document).ready(function() {
 		}
 		else
 		{
-			if ($(this).scrollTop() > 730)
+			if ($(this).scrollTop() > 820)
 			{
 				$('#rs-bar').addClass('sharing-fixed');
 			}
@@ -170,4 +170,5 @@ $('body').ready(function()
 	);
 
 	$('.ssba div:first-child').append( "<span class='ssba_sharecount'>Email</span>" );
+	$('.printfriendly').append( "<span class='ssba_sharecount share-last'>Print</span>"  );
 });

@@ -658,9 +658,10 @@ a.general span
 {
 	width: 22px;
 	height: 30px;
-	background: url('images/tag-left.png') no-repeat;
-	background-size: 100% 100%;
 	float: left;
+	background: url('images/tag-left.png') no-repeat;
+	background: url('images/tag-left-lq.png') no-repeat\9; /* IE8 and below */
+	background-size: 100% 100%;
 }
 
 .main-tag-right
@@ -668,7 +669,9 @@ a.general span
 	background-color: #0063a8;
 	float: left;
 	padding: 6px 10px 7px;
+	padding: 7px 10px 7px\9\0; /* IE9 only */
 }
+
 
 .main-tag-right a
 {
@@ -927,6 +930,8 @@ a.general span
 	border-bottom: 1px #E5E5E5 solid;
 }
 
+
+
 .ssba, .ssba a
 {
 	float: left;
@@ -936,7 +941,7 @@ a.general span
 {
 	float: left;
 	padding: 8px 0 5px 5px !important;
-	margin: 0 50px 0 0;
+	margin: 0 111px 0 0;
 	font-size: 14px !important;
 	font-family: GothamMedium, Arial !important;
 	letter-spacing: 1px;
@@ -953,9 +958,19 @@ a.general span
 	border: none !important;
 }
 
+.share-last
+{
+	margin: 0;
+}
+
 .printfriendly
 {
-	margin: 0 !important;
+	margin: 0  0 18px !important;
+}
+
+.printfriendly a
+{
+	float: left;
 }
 
 .printfriendly a img

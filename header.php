@@ -2,17 +2,20 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
 
-<head> 
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>          
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
 
+  
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!--[if lt IE 9]>
 
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 
 <![endif]-->        
 
@@ -49,6 +52,7 @@
   {
     $('.flexslider').flexslider({
       controlNav: "thumbnails",
+      directionNav: true,
       animation: "slide",
       slideshow: false
     });

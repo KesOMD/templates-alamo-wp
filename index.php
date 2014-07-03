@@ -44,7 +44,30 @@
                 </div>
               </div>
               <div class="main-post-tags">
-                <?php the_tags('<div class="main-post-tag"><div class="main-tag-left"></div><div class="main-tag-right">','</div></div><div class="main-post-tag"><div class="main-tag-left"></div><div class="main-tag-right">','</div></div>'); ?>
+                <?php /* the_tags('<div class="main-post-tag"><div class="main-tag-left"></div><div class="main-tag-right">','</div></div><div class="main-post-tag"><div class="main-tag-left"></div><div class="main-tag-right">','</div></div>'); */ ?>
+                <?php
+                $posttags = get_the_tags();
+                $count = 0;
+                if ( $posttags )
+                {
+                  foreach ( $posttags as $tag )
+                  {
+                    $count++;
+                    if ( 3 > $count )
+                    {
+                      echo '<div class="main-post-tag"><div class="main-tag-left"></div><div class="main-tag-right">';
+                      echo '<a href="';
+                      echo get_tag_link($tag->term_id);
+                      echo '">';
+                      echo $tag->name;
+                      echo '</a>';
+                      echo '</div></div>';
+
+                      debug_to_console( get_tag_link($tag->term_id) );
+                    }
+                  }
+                }
+                ?>
               </div>
               
             </div>
