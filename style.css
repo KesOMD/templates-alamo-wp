@@ -911,6 +911,11 @@ a.general span
 	margin: 0 auto;
 }
 
+#fs-post
+{
+	margin: 0 0 18px;
+}
+
 #fs-post .flex-control-nav
 {
 	border-bottom: 1px #E5E5E5 solid;
@@ -946,6 +951,17 @@ a.general span
 .ssba_sharecount:before, .ssba_sharecount:after
 {
 	border: none !important;
+}
+
+.printfriendly
+{
+	margin: 0 !important;
+}
+
+.printfriendly a img
+{
+	width: 35px;
+	height: 35px;
 }
 
 .blog_left { float: left; width: 660px; }

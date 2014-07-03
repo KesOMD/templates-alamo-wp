@@ -169,6 +169,5 @@ $('body').ready(function()
 
 	);
 
-	var ssbaChild = $('.ssba:first-child');
 	$('.ssba div:first-child').append( "<span class='ssba_sharecount'>Email</span>" );
 });
