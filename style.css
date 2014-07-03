@@ -10,13 +10,6 @@
 
 * { margin: 0; padding: 0; }
 
-body
-{
-	font-size: 12px;
-	font-family: arial, verdana, georgia;
-	color: #000;
-}
-
 @font-face
 {
 	font-family: GothamMedium;
@@ -33,6 +26,13 @@ body
 {
 	font-family: GothamBook;
 	src: url(fonts/gotham-book.otf);
+}
+
+body
+{
+	font-size: 12px;
+	font-family: GothamMedium, arial, verdana, georgia;
+	color: #000;
 }
 
 h1,h2,h3,h4,h5,p { margin: 10px 0; }
@@ -894,6 +894,58 @@ a.general span
 	margin-right: -384px;
 	top: 0px;
 	right: 50%;
+}
+
+
+/* ----- Article Page (single.php) ----- */
+
+
+.wp-caption-text /*hide the image captions*/
+{
+	display: none;
+}
+
+.blog-content
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+#fs-post .flex-control-nav
+{
+	border-bottom: 1px #E5E5E5 solid;
+}
+
+.share-container
+{
+	overflow: hidden;
+	border-bottom: 1px #E5E5E5 solid;
+}
+
+.ssba, .ssba a
+{
+	float: left;
+}
+
+.ssba_sharecount
+{
+	float: left;
+	padding: 8px 0 5px 5px !important;
+	margin: 0 50px 0 0;
+	font-size: 14px !important;
+	font-family: GothamMedium, Arial !important;
+	letter-spacing: 1px;
+	border: none !important;
+	border-radius: 0 !important;
+	color: #000 !important;
+	background: transparent !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+
+.ssba_sharecount:before, .ssba_sharecount:after
+{
+	border: none !important;
 }
 
 .blog_left { float: left; width: 660px; }

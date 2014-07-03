@@ -33,7 +33,7 @@
                 </div>
                 <div class="main-post-desc">
                   <p>
-                    <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
+                    <?php $temp_arr_content = explode(" ",substr( strip_tags( strip_shortcodes( get_the_content() ) ),0,100 ) ); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
                   </p>
                 </div>
                 <div class="main-post-link">
@@ -89,7 +89,7 @@
 
               <div class="home_post_desc">
                 <p>
-                  <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
+                  <?php $temp_arr_content = explode(" ",substr( strip_tags( strip_shortcodes( get_the_content() ) ),0,100 ) ); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?>
                 </p>
               </div><!--//home_post_desc-->
               <div class="main-post-link home-post-link">

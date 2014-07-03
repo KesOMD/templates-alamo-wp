@@ -49,6 +49,7 @@
   {
     $('.flexslider').flexslider({
       controlNav: "thumbnails",
+      animation: "slide",
       slideshow: false
     });
   });
