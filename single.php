@@ -16,7 +16,7 @@
                     </ul>
                 </div><!--end flexslider-->
                 <?php } else { ?>
-                <div class="main-post-image">
+                <div class="art-post-image">
                     <?php the_post_thumbnail(); ?>
                 </div>
                 <?php } ?>

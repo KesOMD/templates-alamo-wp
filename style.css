@@ -377,7 +377,7 @@ a.adventure:hover
 a.adventure span
 {
 	margin: 70px 0 0 -16px;
-	margin: 70px 0 0 -10px; /* IE8 and below */
+	margin: 70px 0 0 -10px\9; /* IE8 and below */
 }
 
 a.sport
@@ -954,6 +954,20 @@ a.general span
 #fs-post .flex-control-nav
 {
 	border-bottom: 1px #E5E5E5 solid;
+}
+
+.art-post-image
+{
+	width: 768px;
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: 1px #E5E5E5 solid;
+}
+
+.art-post-image img
+{
+	width: 768px;
+	height: 372px;
 }
 
 .share-container
