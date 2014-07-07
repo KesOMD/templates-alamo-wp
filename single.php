@@ -25,16 +25,34 @@
                         <?php echo do_shortcode('[ssba]'); ?>
                         <?php if( function_exists( 'pf_show_link' ) ) { echo pf_show_link(); } ?>
                     </div>
-                    <h1><?php the_title(); ?></h1>
+                    <div class="post-info">
+                        <h1><?php the_title(); ?></h1>
+                        <p>By <?php the_author_posts_link(); ?></p>
+                        <p>
+                            <?php
+                            $archive_year  = get_the_time('Y'); 
+                            $archive_month = get_the_time('m'); 
+                            $archive_day   = get_the_time('d'); 
+                            ?>
+                            <a href="<?php echo get_month_link( $archive_year, $archive_month); ?>"><?php the_date( 'jS F Y'); ?></a>
+                        </p>
+                        <p class="info-end"><?php the_category(', '); ?></p>
+                    </div>
+                    
                 </div>
                 
                 
 
-                <div class="left_content">
+                <div class="blog-text-container">
 
                 <?php echo get_the_content_with_format(); ?>
 
-                </div><!--//left_content-->
+                </div><!-- blog-content-container -->
+
+                <div class="post-tag-container">
+                    <p>Article tagged</p>
+                    <div class="post-tags"><?php the_tags('<div class="post-tag"><div class="tag-left"></div><div class="tag-right">','</div></div><div class="post-tag"><div class="tag-left"></div><div class="tag-right">','</div></div>'); ?></div>
+                </div>
 
                 <?php  /* comments_template(); */ ?>
 

@@ -62,8 +62,6 @@
                       echo $tag->name;
                       echo '</a>';
                       echo '</div></div>';
-
-                      debug_to_console( get_tag_link($tag->term_id) );
                     }
                   }
                 }
