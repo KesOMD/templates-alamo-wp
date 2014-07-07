@@ -23,7 +23,7 @@ $(document).ready(function() {
 			else
 			{
 				$('#rs-bar2').removeClass('sharing-fixed');
-			} 
+			}
 		}
 			
 	});
