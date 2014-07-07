@@ -19,7 +19,7 @@
 
         global $wp_query;
 
-        $args = array_merge( $wp_query->query, array( 'posts_per_page' => 9 ) );
+        $args = array_merge( $wp_query->query, array( 'posts_per_page' => 3 ) );
 
         query_posts( $args );
 
