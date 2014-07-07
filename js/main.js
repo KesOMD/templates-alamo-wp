@@ -15,6 +15,15 @@ $(document).ready(function() {
 			{
 				$('#rs-bar').removeClass('sharing-fixed');
 			}
+
+			if ($(this).scrollTop() > 225)
+			{
+				$('#rs-bar2').addClass('sharing-fixed');
+			}
+			else
+			{
+				$('#rs-bar2').removeClass('sharing-fixed');
+			} 
 		}
 			
 	});

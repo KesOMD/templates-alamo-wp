@@ -59,7 +59,7 @@
 
         </div><!--end other-posts-->
 
-        <div class="right-side" id="rs-bar">
+        <div class="right-side" id="rs-bar2">
           <div class ="email-signup">
             <div class="email-header">
               <h3>Newsletter</h3>
