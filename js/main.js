@@ -168,7 +168,21 @@ $('body').ready(function()
 		}
 
 	);
+	$('#act-close').click(function()
+		{
+			$('#activities-dropdown').slideUp( "fast" );
+		}
+
+	);
+	$('#search-close').click(function()
+		{
+			$('#search-dropdown').slideUp( "fast" );
+		}
+
+	);
 
 	$('.ssba div:first-child').append( "<span class='ssba_sharecount'>Email</span>" );
 	$('.printfriendly').append( "<span class='ssba_sharecount share-last'>Print</span>"  );
+	/*$('.slides').find('li:last').remove();*/
+	console.log( $('.slides').find('li:last') );
 });

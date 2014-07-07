@@ -23,38 +23,42 @@ if (function_exists('add_theme_support')) {
 function revconcept_get_images($post_id) {
     global $post;
  
-     $thumbnail_ID = get_post_thumbnail_id();
+    $thumbnail_ID = get_post_thumbnail_id();
  
-     $images = get_children( array('post_parent' => $post_id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
+    $images = get_children( array('post_parent' => $post_id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
 
-     $number_of_images = count($images);
+    $number_of_images = count($images);
  
-     if ($images) :
+    if ($images) :
  
-         foreach ($images as $attachment_id => $image) :
+        foreach ($images as $attachment_id => $image) :
  
-         if ( $image->ID != $thumbnail_ID ) :
+        if ( $image->ID != $thumbnail_ID ) :
  
-             $img_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true); //alt
-             if ($img_alt == '') : $img_alt = $image->post_title; endif;
+          $img_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true); //alt
+          if ($img_alt == '') : $img_alt = $image->post_title; endif;
+
+          $image_cap = $img_alt;
+
+          $big_array = image_downsize( $image->ID, 'post-gal-image' );
+          $img_url = $big_array[0];
+          $small_array = image_downsize( $image->ID, 'post-gal-thumb' );
+          $thumb_url = $small_array[0];
+          
+          echo '<li ';
+          echo 'data-thumb="';
+          echo $thumb_url;
+          echo '"><img ';
+          echo 'src="';
+          echo $img_url;
+          echo '" alt="';
+          echo $img_alt;
+          echo '" />';
+          echo '<div class="flexslider-caption">';
+          echo '<p>' . $img_alt . '</p>';
+          echo '</div></li><!--end slide-->';
  
-             $big_array = image_downsize( $image->ID, 'post-gal-image' );
-             $img_url = $big_array[0];
-             $small_array = image_downsize( $image->ID, 'post-gal-thumb' );
-             $thumb_url = $small_array[0];
- 
-             echo '<li ';
-             echo 'data-thumb="';
-             echo $thumb_url;
-             echo '"><img ';
-             echo 'src="';
-             echo $img_url;
-             echo '" alt="';
-             echo $img_alt;
-             echo '" />';
-             echo '</li><!--end slide-->';
- 
-     endif; endforeach; endif; }
+    endif; endforeach; endif; }
 
 
 function get_category_id($cat_name){

@@ -203,7 +203,7 @@
         },
         setupPaging: function() {
           var type = (slider.vars.controlNav === "thumbnails") ? 'control-thumbs' : 'control-paging',
-              j = 1,
+              j = 0,
               item,
               slide;
 
@@ -212,6 +212,7 @@
           if (slider.pagingCount > 1) {
             for (var i = 0; i < slider.pagingCount; i++) {
               slide = slider.slides.eq(i);
+              console.log("each slide thumb = " + slide.attr( 'data-thumb' ));
               item = (slider.vars.controlNav === "thumbnails") ? '<img src="' + slide.attr( 'data-thumb' ) + '"/>' : '<a>' + j + '</a>';
               if ( 'thumbnails' === slider.vars.controlNav && true === slider.vars.thumbCaptions ) {
                 var captn = slide.attr( 'data-thumbcaption' );
@@ -837,6 +838,7 @@
 
       if (slider.transitions) {
         target = (vertical) ? "translate3d(0," + target + ",0)" : "translate3d(" + target + ",0,0)";
+        console.log("target = " + target);
         dur = (dur !== undefined) ? (dur/1000) + "s" : "0s";
         slider.container.css("-" + slider.pfx + "-transition-duration", dur);
          slider.container.css("transition-duration", dur);
@@ -867,7 +869,7 @@
         }
         // INFINITE LOOP && !CAROUSEL:
         if (slider.vars.animationLoop && !carousel) {
-          slider.cloneCount = 2;
+          slider.cloneCount = 1;
           slider.cloneOffset = 1;
           // clear out old clones
           if (type !== "init") slider.container.find('.clone').remove();

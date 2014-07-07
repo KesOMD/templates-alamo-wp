@@ -54,7 +54,9 @@
       controlNav: "thumbnails",
       directionNav: true,
       animation: "slide",
-      slideshow: false
+      animationLoop: false,
+      slideshow: false,
+      thumbCaptions: true
     });
   });
   </script>
@@ -154,6 +156,9 @@
             <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-icon.png" class="search_icon" BORDER="0" ALT="Submit Form">
           </form>
         </div><!-- search_cont -->
+        <div class="close-container" id="search-close">
+          <div class="close-btn"></div>
+        </div>
       </div><!-- search-dropdown -->
 
       <div class="dropdowns" id="activities-dropdown">
@@ -183,6 +188,9 @@
             <a class="general" href="<?php echo get_tag_link(get_term_by( 'slug', 'general', 'post_tag' )->term_id ); ?>"><span>GENERAL</span></a>
           </div>
           <div class="grey-divide"></div>
+        </div>
+        <div class="close-container" id="act-close">
+          <div class="close-btn"></div>
         </div>
       </div><!-- activities-dropdown -->
 
