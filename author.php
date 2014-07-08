@@ -1,18 +1,34 @@
 <?php get_header(); ?>
 
+<div id="content" class="author-cont">
+  <!– This sets the $curauth variable –>
+  <?php
+  if(isset($_GET['author_name'])) :
+    $curauth = get_userdatabylogin($author_name);
+  else :
+    $curauth = get_userdata(intval($author));
+  endif;
+  ?>
+  <div class="author-info">
+    <h1><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></h1>
+    <div class="author-description">
+      <p><?php echo $curauth->user_description; ?></p>
+    </div>
+    <div class="author-social">
+      <?php if ( get_the_author_meta( 'facebook' ) ) { ?>
+      <a href="<?php the_author_meta( 'facebook' ); ?>" title="Become Friends with <?php the_author_meta( 'display_name' ); ?> on Facebook"><img class="desktop-social" alt="Facebook" src="<?php bloginfo('stylesheet_directory'); ?>/images/share-facebook.jpg" /><img class="mobile-social" alt="Facebook" src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-share-facebook.jpg" /></a>
+      <?php } ?>
+      <?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+      <a href="<?php the_author_meta( 'twitter' ); ?>" title="Follow <?php the_author_meta( 'display_name' ); ?> on Twitter"><img class="desktop-social" alt="Twitter" src="<?php bloginfo('stylesheet_directory'); ?>/images/share-twitter.jpg" /><img class="mobile-social" alt="Twitter" src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-share-twitter.jpg" /></a>
+      <?php } ?>
+      <?php if ( get_the_author_meta( 'gplus' ) ) { ?>
+        <a href="<?php the_author_meta( 'gplus' ); ?>" title="Connect with <?php the_author_meta( 'display_name' ); ?> on Google Plus"><img class="desktop-social" alt="Google Plus" src="<?php bloginfo('stylesheet_directory'); ?>/images/share-gplus.jpg" /><img class="mobile-social" alt="Google Plus" src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-share-gplus.jpg" /></a>
+      <?php } ?>
+      <span class="stretch"></span>
+    </div>
+  </div> <!-- End of Author Info -->
+</div><!-- End of Author Cont -->
     <div id="load_posts_container">
-
-        <div class="cat-header">
-            <div class="cat-desc">
-                <p>Your results for...</p>
-            </div>
-            <div class="cat-name">
-                <h1><?php single_cat_title(); ?></h1>
-            </div>
-            <div class="cat-desc">
-                <p><?php echo category_description(); ?></p>
-            </div>
-        </div>
 
         <div id="other-posts">
         <?php

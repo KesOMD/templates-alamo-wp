@@ -62,7 +62,10 @@
               <h3>Newsletter</h3>
             </div>
             <div class="email-text">
-              <p>Sign up for the latest news<br />from Alamo.</p>
+              <p>Register now to be the first to hear about exclusive offers, news and updates from Alamo Rent A Car.</p>
+            </div>
+            <div class="email-button">
+              <a href="http://www.alamo.co.uk/Content/740/uk/EmailProgramme" target="_blank"><p>Enter here</p><img src="<?php bloginfo('stylesheet_directory'); ?>/images/read-more-arrow.png" /></a>
             </div>
           </div>
 
