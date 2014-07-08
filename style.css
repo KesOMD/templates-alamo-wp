@@ -1718,6 +1718,53 @@ html[xmlns] .slides {display: block;}
 	line-height: 23px;
 }
 
+/* ----- About Page ----- */
+
+.blank-content
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+.blank-text-cont
+{
+	width: inherit;
+	margin: 0 0 20px;
+}
+
+.blank-text-cont hr
+{
+	color: #ccc;
+}
+
+.blank-header
+{
+	width: inherit;
+	margin: 15px 0;
+}
+
+.blank-header h1
+{
+	color: #0063a8;
+	font-family: GothamBold, "Arial Black";
+	font-weight: normal;
+	margin: 0;
+}
+
+.blank-text
+{
+	margin: 20px 0;
+	width: inherit;
+}
+
+.blank-text p
+{
+	margin: 0;
+	font-family: GothamBook, Arial;
+	font-size: 17px;
+	line-height: 23px;
+}
+
 /* ----- Category Page ----- */
 
 .cat-header
