@@ -55,7 +55,16 @@
             </div><!--//home_post_box-->
 
         <?php endwhile; else: ?>
-        <p class="no-posts-here">There are no posts in this category</p>
+        <div class="no-results-cont">
+          <p class="no-posts-here">Sorry no matches.</p>
+          <div class="search_cont" id="no-res-search">
+            <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+              <input type="text" name="s" id="s" value="Enter activity or destination here" onfocus="if ( this.value == 'Enter activity or destination here' ) { this.value = '' }" onblur="if (this.value == '') { this.value = 'Enter activity or destination here' }">
+              <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-icon.png" class="search_icon" BORDER="0" ALT="Submit Form">
+            </form>
+          </div><!-- search_cont -->
+        </div>
+        
         <?php endif; ?>
 
 
@@ -69,7 +78,10 @@
               <h3>Newsletter</h3>
             </div>
             <div class="email-text">
-              <p>Sign up for the latest news<br />from Alamo.</p>
+              <p>Register now to be the first to hear about exclusive offers, news and updates from Alamo Rent A Car.</p>
+            </div>
+            <div class="email-button">
+              <a href="http://www.alamo.co.uk/Content/740/uk/EmailProgramme" target="_blank"><p>Enter here</p><img src="<?php bloginfo('stylesheet_directory'); ?>/images/read-more-arrow.png" /></a>
             </div>
           </div>
 
