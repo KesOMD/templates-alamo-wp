@@ -56,7 +56,9 @@
       animation: "slide",
       animationLoop: false,
       slideshow: false,
-      thumbCaptions: true
+      thumbCaptions: true,
+      prevText: "",
+      nextText: ""
     });
   });
   </script>
