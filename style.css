@@ -132,6 +132,7 @@ ul#logo-nav li
 ul.sub_navigation
 {
 	position: absolute;
+	z-index: 398;
 	top: 98px;
 	display: none;
 	background-color: #E6E6E6;
