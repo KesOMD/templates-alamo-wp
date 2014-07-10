@@ -193,5 +193,11 @@ $('body').ready(function()
 	$('.ssba div:first-child').append( "<span class='ssba_sharecount'>Email</span>" );
 	$('.printfriendly').append( "<span class='ssba_sharecount share-last'>Print</span>"  );
 	/*$('.slides').find('li:last').remove();*/
-	console.log( $('.slides').find('li:last') );
+	//console.log( $('.slides').find('li:last') );
+	//console.log( $('.flexslider' ) );
+	//console.log( $('.flexslider :last-child' ) );
+	//console.log( $('.flexslider' ).find( '.flex-direction-nav' ) );
+
+	//var temp = document.getElementsByClassName("flex-next");
+	//console.log( temp );
 });

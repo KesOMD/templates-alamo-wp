@@ -59,7 +59,7 @@
       thumbCaptions: true,
       prevText: "",
       nextText: ""
-    });
+    })
   });
   </script>
 

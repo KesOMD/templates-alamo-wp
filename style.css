@@ -1208,7 +1208,11 @@ html[xmlns] .slides {display: block;}
 }
 
 /* Direction Nav */
-.flex-direction-nav {*height: 0;}
+.flex-direction-nav
+{
+	*height: 0;
+}
+
 .flex-direction-nav a
 {
 	text-decoration:none;
@@ -1218,7 +1222,7 @@ html[xmlns] .slides {display: block;}
 	margin: -20px 0 0;
 	position: absolute;
 	top: 40%;
-	z-index: 10;
+	z-index: 1000;
 	overflow: hidden;
 	opacity: 0;
 	cursor: pointer;
@@ -1275,6 +1279,7 @@ html[xmlns] .slides {display: block;}
 	background: url('images/flex-nav-arrow-left.png') no-repeat;
 	background: url('images/flex-nav-arrow-lq-left.png') no-repeat\9; /* IE8 and below */
 	background-size: 100% 100%;
+	
 }
 
 .flex-direction-nav a.flex-next
