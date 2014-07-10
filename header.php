@@ -219,7 +219,7 @@
           <div class="dest-list-cont" id="uk-cat">
             <?php
             $cat_uk = get_category_by_slug( 'united-kingdom' );
-            $cat_uk_URL = get_category_link( $cat_us->term_id );
+            $cat_uk_URL = get_category_link( $cat_uk->term_id );
             ?>
             <a href="<?php echo $cat_uk_URL; ?>" title="<?php echo $cat_uk->name ?>"><p><?php echo $cat_uk->name ?></p></a>
             <ul class="bycategories">
