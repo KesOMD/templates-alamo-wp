@@ -280,7 +280,7 @@ ul.sub_navigation li a p
 	background-color: #f2f2f2;
 	color: #000;
 	font-family: GothamMedium, Arial;
-	font-size: 20px;
+	font-size: 18px;
 	width: 330px;
 	height: 30px;
 	border: none;
@@ -845,7 +845,7 @@ a.general span
 	font-family: GothamBook, Arial;
 	font-size: 14px;
 	letter-spacing: -1px;
-	margin: 10px 0;
+	margin: 5px 0;
 }
 
 .email-button
@@ -881,7 +881,7 @@ a.general span
 .pop-posts
 {
 	width: 212px;
-	margin: 15px 0 0 19px;
+	margin: 7px 0 0 19px;
 }
 
 .pop-container
@@ -893,7 +893,7 @@ a.general span
 {
 	width: inherit;
 	overflow: hidden;
-	margin: 15px 0 0 0;
+	margin: 8px 0 0 0;
 	border-bottom: 1px #E5E5E5 solid;
 }
 
@@ -917,6 +917,7 @@ a.general span
 	font-family: GothamMedium, Arial;
 	font-size: 13px;
 	font-weight: normal;
+	margin: 7px 0;
 }
 
 .wpp-thumbnail
