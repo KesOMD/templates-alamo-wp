@@ -18,7 +18,8 @@
 
             <div class="error-text">
                 <h1>404 error</h1>
-                <h2>The page isn't here</h2>
+                <p>Oops! The page you’re looking for can’t be found.</p>
+                <p>You can use the back button in your browser to return to your previous page, or click <a href="<?php bloginfo('url'); ?>" title="Return Home">here</a> and we’ll take you back to the homepage of our blog.</p>
             </div>
             <div class="recent-post-cont" id="error-related">
                 <h2>Most recent posts</h2>

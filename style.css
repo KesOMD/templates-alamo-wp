@@ -620,7 +620,7 @@ a.general span
 
 .main-post-tags
 {
-	width: 20%;
+	width: 28%;
 	float: right;
 	text-align: right;
 }
@@ -1145,6 +1145,7 @@ a.general span
 {
 	display: none;
 	position: absolute;
+	bottom: 0;
 	z-index: 201;
 	width: 768px;
 	height: 48px;
@@ -1185,7 +1186,7 @@ html[xmlns] .slides {display: block;}
 .flex-viewport
 {
 	overflow: visible !important;
-	max-height: 2000px;
+	max-height: 372px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -1197,6 +1198,8 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides li
 {
 	opacity: 0.5;
+	max-height: 372px;
+	overflow: hidden;
 }
 
 .carousel li { margin-right: 5px; }
@@ -1279,8 +1282,8 @@ html[xmlns] .slides {display: block;}
 	content: '\f001';
 	*/
 	display: inline-block;
-	width: 24px;
-	height: 37px;
+	width: 28px;
+	height: 41px;
 	background: url('images/flex-nav-arrow-left.png') no-repeat;
 	background: url('images/flex-nav-arrow-lq-left.png') no-repeat\9; /* IE8 and below */
 	background-size: 100% 100%;
@@ -1661,7 +1664,7 @@ html[xmlns] .slides {display: block;}
 	font-size: 24px;
 }
 
-.error-text h2
+.error-text p
 {
 	font-family: GothamBook, Arial;
 	font-size: 18px;

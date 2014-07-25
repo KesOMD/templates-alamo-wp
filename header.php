@@ -201,7 +201,7 @@
           <div class="dest-divide"></div>
           <div class="dest-list-cont">
             <?php
-            $cat_us = get_category_by_slug( 'united-states' );
+            $cat_us = get_category_by_slug( 'united-states-2' );
             $cat_us_URL = get_category_link( $cat_us->term_id );
             ?>
             <a href="<?php echo $cat_us_URL; ?>" title="<?php echo $cat_us->name ?>"><p><?php echo $cat_us->name ?></p></a>
