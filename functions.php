@@ -37,7 +37,6 @@ function revconcept_get_images($post_id) {
  
           $img_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true); //alt
           if ($img_alt == '') : $img_alt = $image->post_title; endif;
-
           $image_cap = $img_alt;
 
           $big_array = image_downsize( $image->ID, 'post-gal-image' );
