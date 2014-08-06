@@ -51,7 +51,7 @@ function revconcept_get_images($post_id) {
           echo 'src="';
           echo $img_url;
           echo '" alt="';
-          echo $img_alt;
+          echo json_encode($img_alt);
           echo '" />';
           echo '<div class="flexslider-caption">';
           echo '<p>' . $img_alt . '</p>';
