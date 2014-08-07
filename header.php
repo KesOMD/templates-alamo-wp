@@ -58,7 +58,8 @@
       slideshow: false,
       thumbCaptions: true,
       prevText: "",
-      nextText: ""
+      nextText: "",
+      useCSS: true
     })
   });
   </script>
