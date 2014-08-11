@@ -72,7 +72,7 @@ if( !function_exists('get_the_content_with_format') ):
 function get_the_content_with_format ($more_link_text = '', $stripteaser = 0, $more_file = '') {
 $content = get_the_content($more_link_text, $stripteaser, $more_file);
 $content = apply_filters('the_content', $content);
-$content = strip_tags($content, '<p><a>');
+$content = strip_tags($content, '<p><a><ul><ol><li><h1><h2><h3><strong><br><br /><textarea>');
 return $content;
 }
 endif;
