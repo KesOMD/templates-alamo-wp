@@ -37,7 +37,7 @@
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-blog-image',array('alt' => 'post image')); ?></a>
 
               <div class="home_post_title_cont">
-                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
               </div><!--//home_post_title_cont-->
 
               <div class="home_post_desc">

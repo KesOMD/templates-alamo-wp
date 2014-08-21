@@ -31,6 +31,13 @@ get_header(); ?>
                 <hr>
             </div>
             <?php endwhile; endif; ?>
+            <div class="author-list-cont">
+                <h2>Check out our Authors</h2>
+                <ul class="author-list">
+                    <?php wp_list_authors(); ?>
+                </ul>
+                <hr>
+            </div>
             <div class="recent-post-cont" id="error-related">
                 <h2>Most recent posts</h2>
                 <?php

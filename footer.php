@@ -17,18 +17,18 @@
 
             <div class="footer-links-cont">
                 <div class="footer-links" id="fl-col1">
-                    <a href="http://www.alamo.co.uk/" target="_blank" alt="Home"><p>HOME</p></a>
-                    <a href="http://aboutus.alamo.co.uk/" target="_blank" alt="About Us"><p>ABOUT US</p></a>
-                    <a href="http://www.alamo.co.uk/Content/740/uk/ContactUs" target="_blank" alt="Contact Us"><p>CONTACT US</p></a>
+                    <a href="http://www.alamo.co.uk/" target="_blank" alt="Home"><p>Home</p></a>
+                    <a href="http://aboutus.alamo.co.uk/" target="_blank" alt="About Us"><p>About Alamo</p></a>
+                    <a href="http://www.alamo.co.uk/Content/740/uk/ContactUs" target="_blank" alt="Contact Us"><p>Contact us</p></a>
                 </div>
                 <div class="footer-links" id="fl-col2">
-                    <a href="http://www.alamo.co.uk/helpfulinformation/gb" target="_blank" alt="Helpful Information"><p>HELPFUL INFORMATION</p></a>
-                    <a href="http://www.alamo.co.uk/affiliates" target="_blank" alt="Affiliates"><p>AFFILIATES</p></a>
+                    <a href="http://www.alamo.co.uk/helpfulinformation/gb" target="_blank" alt="Helpful Information"><p>Helpful information</p></a>
+                    <a href="http://www.alamo.co.uk/affiliates" target="_blank" alt="Affiliates"><p>Affiliates</p></a>
                 </div>
                 <div class="footer-links" id="fl-col3">
-                    <a href="http://www.alamo.co.uk/Content/740/uk/PrivacyPolicy" target="_blank" alt="Privacy Policy"><p>PRIVACY POLICY</p></a>
-                    <a href="http://www.alamo.co.uk/Content/740/uk/CookiePolicy" target="_blank" alt="Car hire home"><p>COOKIE POLICY</p></a>
-                    <a href="http://www.alamo.co.uk/Content/740/uk/Sitemap" target="_blank" alt="Car hire home"><p>SITEMAP</p></a>
+                    <a href="http://www.alamo.co.uk/Content/740/uk/PrivacyPolicy" target="_blank" alt="Privacy Policy"><p>Privacy policy</p></a>
+                    <a href="http://www.alamo.co.uk/Content/740/uk/CookiePolicy" target="_blank" alt="Car hire home"><p>Cookie policy</p></a>
+                    <a href="http://www.alamo.co.uk/Content/740/uk/Sitemap" target="_blank" alt="Car hire home"><p>Sitemap</p></a>
                 </div>
             </div>
 

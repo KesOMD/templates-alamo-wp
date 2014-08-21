@@ -18,18 +18,20 @@
           <?php if ($number_of_images > 1) { ?>
             <div class="flexslider">
               <ul class="slides">
-                <?php revconcept_get_images("$post->ID"); ?>
+                <?php revconcept_get_images_links("$post->ID"); ?>
               </ul>
             </div><!--end flexslider-->
           <?php } else { ?>
             <div class="main-post-image">
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+              <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail(); ?>
+              </a>
             </div>
           <?php } ?>
             <div class="main-post-details">
               <div class="main-post-text">
                 <div class="main-post-title">
-                  <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 </div>
                 <div class="main-post-desc">
                   <p>
@@ -101,11 +103,14 @@
         ?>                                                                      
 
             <div class="home_post_box">
+              <?php
+              $titleAlt = the_title_attribute('echo=0');
+              ?>
 
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-blog-image',array('alt' => 'post image')); ?></a>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-blog-image',array('alt' => $titleAlt)); ?></a>
 
               <div class="home_post_title_cont">
-                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
               </div><!--//home_post_title_cont-->
 
               <div class="home_post_desc">

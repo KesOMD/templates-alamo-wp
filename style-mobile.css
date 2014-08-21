@@ -1,0 +1,341 @@
+/* iPhone 5 Portrait */
+
+@media only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 320px) {
+
+	/* Header */
+
+	#header
+	{
+		padding: 10px 20px;
+	}
+
+	.header-cont
+	{
+		width: inherit;
+	}
+
+	#logo-nav
+	{
+		display: none;
+	}
+
+	.mob-logo-cont
+	{
+		display: block;
+		float: left;
+		width: 50%;
+	}
+
+	.logo
+	{
+		width: 106px;
+		height: 48px;
+	}
+
+	.mob-button-cont
+	{
+		display: block;
+		float: left;
+		width: 50%;
+	}
+
+	.mob-button
+	{
+		float: right;
+	}
+
+	.mob-button img
+	{
+		width: 53px;
+		height: 48px;
+	}
+
+	.header-button-cont
+	{
+		display: none;
+	}
+
+	.mob-dropdown
+	{
+		display: none;
+		position: absolute;
+		width: inherit;
+		top: 71px;
+		left: 0;
+		background-color: #0061a8;
+		z-index: 399;
+	}
+
+	.mob-dropdown ul
+	{
+		width: inherit;
+		margin: 15px 0;
+		overflow: hidden;
+	}
+
+	.mob-dropdown ul li
+	{
+		width: inherit;
+		padding: 0 20px;
+		margin-bottom: 15px;
+	}
+
+	.mob-dropdown ul li a
+	{
+		text-decoration: none;
+	}
+
+	.mob-dropdown ul li a p
+	{
+		color: #fff;
+		font-size: 16pt;
+		font-family: GothamBold;
+		margin: 0;
+		letter-spacing: 0.5pt;
+	}
+
+	.intro-cont
+	{
+		width: 280px;
+	}
+
+	.intro-cont h1
+	{
+		font-size: 20pt;
+	}
+
+	.intro-cont h2
+	{
+		font-size: 16pt;
+	}
+
+	/* Footer */
+
+	#footer
+	{
+		padding-bottom: 25px; 
+	}
+
+	.footer_widgets_cont
+	{
+		width: inherit;
+
+	}
+
+	.footer-logo-cont
+	{
+		float: none;
+		width: 50%;
+		position: relative;
+		left: 20px;
+		top: 330px;
+	}
+
+	.footer-links-cont
+	{
+		width: 100%;
+		float: none;
+		position: relative;
+		top: -120px;
+	}
+
+	.footer-links a
+	{
+		/* */
+	}
+
+	.footer-links a p
+	{
+		color: #fff;
+		font-size: 16pt;
+		font-family: GothamBold;
+		margin: 0 0 15px 20px;
+		letter-spacing: 0.5pt;
+		text-transform: none;
+	}
+
+	#fl-col1
+	{
+		margin: 0;
+	}
+
+	#fl-col2
+	{
+		margin: 0;
+	}
+
+	#fl-col3
+	{
+		float: left;
+	}
+
+	/* index page */
+
+	#load_posts_container
+	{
+		width: 280px;
+	}
+
+	.main-post-text
+	{
+		width: inherit;
+	}
+
+	.main-post-tags
+	{
+		display: none;
+	}
+
+	#other-posts
+	{
+		width: inherit;
+	}
+
+	.home_post_box
+	{
+		width: inherit;
+		margin-right: 0;
+	}
+
+	.home_post_box img
+	{
+		width: 280px;
+		height: 173px;
+	}
+
+	.home_post_title_cont
+	{
+		width: inherit;
+	}
+
+	.load_more_cont
+	{
+		width: 280px;
+	}
+
+	.right-side
+	{
+		display: none;
+	}
+
+	.post-info
+	{
+		width: inherit;
+	}
+
+	/* Flexslider */
+
+	.flex-direction-nav a
+	{
+		top: 25%;
+	}
+
+	.flexslider-caption
+	{
+		bottom: -48px;
+		width: inherit;
+		background: rgba(0, 0, 0, 1);
+		background: rgb(0, 0, 0)\9; /* IE8 and below */
+	}
+
+	.flexslider-caption p
+	{
+		margin: 7px 0 0 10px
+	}
+
+	.flex-control-thumbs
+	{
+		margin: 10px auto 0;
+		width: 280px;
+	}
+	
+	.flex-viewport
+	{
+		height: 185px;
+	}
+
+	.slides li
+	{
+		height: 136px !important;
+	}
+
+	.slides img
+	{
+		width: 280px !important;
+		height: 136px !important;
+	}
+
+	/* Individual blog post (single.php) */
+	.blog-content
+	{
+		width: inherit;
+	}
+
+	.post-details
+	{
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	.share-container
+	{
+		padding: 0 0 18px;
+	}
+
+	.ssba img
+	{
+		width: 60px !important;
+	}
+
+	.ssba_sharecount
+	{
+		margin: 16px 12px 0 6px;
+		padding: 0 !important;
+		font-size: 20px !important;
+	}
+
+	.ssba_email_share
+	{
+		display: none;
+	}
+
+	.printfriendly
+	{
+		display: none;
+	}
+
+	.post-info h1
+	{
+		font-size: 22px;
+	}
+
+	.post-info p
+	{
+		font-size: 18px;
+		margin: 10px 0;
+	}
+
+	.blog-text-container
+	{
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+
+	.blog-text-container p
+	{
+		width: inherit;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.post-tag-container
+	{
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	.post-tag-container p
+	{
+		font-size: 18px;
+	}
+}

@@ -16,7 +16,7 @@ $(document).ready(function() {
 				$('#rs-bar').removeClass('sharing-fixed');
 			}
 
-			if ($(this).scrollTop() > 225)
+			if ($(this).scrollTop() > 325)
 			{
 				$('#rs-bar2').addClass('sharing-fixed');
 			}
@@ -24,9 +24,20 @@ $(document).ready(function() {
 			{
 				$('#rs-bar2').removeClass('sharing-fixed');
 			}
+
+			
 		}
 			
 	});
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+{
+				
+}
+else
+{
+	$('.ssba div:first-child').append( "<span class='ssba_sharecount'>Email</span>" );
+}
 
 $('img.rounded').one('load',function () {
 	var img = $(this);
@@ -190,7 +201,15 @@ $('body').ready(function()
 
 	);
 
-	$('.ssba div:first-child').append( "<span class='ssba_sharecount'>Email</span>" );
+	$('#mobile').click(function()
+		{
+			$('#mobile-dd').slideToggle( "fast" );
+			
+		}
+
+	);
+
+	
 	$('.printfriendly').append( "<span class='ssba_sharecount share-last'>Print</span>"  );
 	/*$('.slides').find('li:last').remove();*/
 	//console.log( $('.slides').find('li:last') );

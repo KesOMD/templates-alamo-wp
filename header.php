@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
 
-  
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style-mobile.css" type="text/css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -83,7 +83,7 @@
         <ul id="logo-nav">
           <li class="dropdown">
             <a id="header-logo">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/alamo_logo_213x96.png" class="logo" />
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/alamo_logo_215x96.png" class="logo" />
               <div class="menu-arrow">
                 <div class="arrow-cont">
                   <img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-arrow.png">
@@ -112,8 +112,6 @@
               <p>Travel Home</p>
             </a> 
           </div>
-          
-          
 
           <div class="header-button" id="act">
             <a>
@@ -145,6 +143,18 @@
           </div>
         </div>
         
+        <div class="mob-logo-cont">
+          <a href="<?php bloginfo('url'); ?>">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/alamo_logo_215x96.png" class="logo" alt="Alamo Car Hire"/>
+          </a>
+        </div>
+
+        <div class="mob-button-cont">
+          <div class="mob-button" id="mobile">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/mob-menu-icon.png" />
+          </div>
+        </div>
+
         <div class="clear"></div>
         
       </div><!-- header-button-cont -->
@@ -246,8 +256,15 @@
             <div class="close-btn"></div>
           </div>
         </div><!-- dest-container -->
-        
       </div><!-- dest-dropdown -->
+
+      <div class="mob-dropdown" id="mobile-dd">
+        <ul>
+          <li><a href=""><p>Home</p></a></li>
+          <li><a href=""><p>Activities</p></a></li>
+          <li><a href=""><p>Destinations</p></a></li>
+        </ul>
+      </div><!-- Mobile Dropdown -->
     </div><!-- dropdown-container -->
     <?php
     if ( is_home() ) { ?>

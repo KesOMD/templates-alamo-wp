@@ -50,15 +50,62 @@ function revconcept_get_images($post_id) {
           echo '"><img ';
           echo 'src="';
           echo $img_url;
-          echo '" alt="';
+          echo '" alt=';
           echo json_encode($img_alt);
-          echo '" />';
+          echo ' />';
           echo '<div class="flexslider-caption">';
           echo '<p>' . $img_alt . '</p>';
           echo '</div></li><!--end slide-->';
  
     endif; endforeach; endif; }
 
+function revconcept_get_images_links($post_id) {
+    global $post;
+ 
+    $thumbnail_ID = get_post_thumbnail_id();
+ 
+    $images = get_children( array('post_parent' => $post_id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
+
+    $number_of_images = count($images);
+    
+    $postURL = get_permalink( $post_id );
+    $postTitle = the_title_attribute( array( 'echo' => 0, 'post' => get_post( $post_id ) ) );
+    
+    if ($images) :
+ 
+        foreach ($images as $attachment_id => $image) :
+ 
+        if ( $image->ID != $thumbnail_ID ) :
+ 
+          $img_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true); //alt
+          if ($img_alt == '') : $img_alt = $image->post_title; endif;
+          $image_cap = $img_alt;
+
+          $big_array = image_downsize( $image->ID, 'post-gal-image' );
+          $img_url = $big_array[0];
+          $small_array = image_downsize( $image->ID, 'post-gal-thumb' );
+          $thumb_url = $small_array[0];
+          
+
+
+          echo '<li ';
+          echo 'data-thumb="';
+          echo $thumb_url;
+          echo '"><a href="';
+          echo $postURL;
+          echo '" title="';
+          echo $postTitle;
+          echo '"><img ';
+          echo 'src="';
+          echo $img_url;
+          echo '" alt=';
+          echo json_encode($img_alt);
+          echo ' /></a>';
+          echo '<div class="flexslider-caption">';
+          echo '<p>' . $img_alt . '</p>';
+          echo '</div></li><!--end slide-->';
+ 
+    endif; endforeach; endif; }
 
 function get_category_id($cat_name){
 
@@ -72,12 +119,21 @@ if( !function_exists('get_the_content_with_format') ):
 function get_the_content_with_format ($more_link_text = '', $stripteaser = 0, $more_file = '') {
 $content = get_the_content($more_link_text, $stripteaser, $more_file);
 $content = apply_filters('the_content', $content);
-$content = strip_tags($content, '<p><a><ul><ol><li><h1><h2><h3><strong><br><br /><textarea>');
+$content = strip_tags($content, '<p><a><ul><ol><li><h1><h2><h3><strong><br><br /><textarea><iframe><strong><span><em>');
 return $content;
 }
 endif;
 
-
+function get_custom_cat_template($single_template) {
+     global $post;
+ 
+       if ( in_category( 'infographic' )) {
+          $single_template = dirname( __FILE__ ) . '/single-info.php';
+     }
+     return $single_template;
+}
+ 
+add_filter( "single_template", "get_custom_cat_template" ) ;
 
 if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 
