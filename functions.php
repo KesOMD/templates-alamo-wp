@@ -48,6 +48,7 @@ function revconcept_get_images($post_id) {
           echo 'data-thumb="';
           echo $thumb_url;
           echo '"><img ';
+          echo 'class="post-slide" ';
           echo 'src="';
           echo $img_url;
           echo '" alt=';

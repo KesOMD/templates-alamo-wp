@@ -181,9 +181,36 @@
 		width: inherit;
 	}
 
+	.main-post-title h2
+	{
+		font-size: 24px
+	}
+
+	.main-post-desc p
+	{
+		font-size: 19px;
+	}
+
 	.main-post-tags
 	{
 		display: none;
+	}
+
+	.main-post-link
+	{
+		width: 155px;
+	}
+
+	.main-post-link a p
+	{
+		font-size: 22px;
+	}
+
+	.main-post-link a img
+	{
+		width: 22px;
+		height: 22px;
+		margin: 3px 0 0;
 	}
 
 	#other-posts
@@ -208,6 +235,16 @@
 		width: inherit;
 	}
 
+	.home_post_title_cont h2
+	{
+		font-size: 24px;
+	}
+
+	.home_post_desc p
+	{
+		font-size: 19px;
+	}
+
 	.load_more_cont
 	{
 		width: 280px;
@@ -222,6 +259,8 @@
 	{
 		width: inherit;
 	}
+
+
 
 	/* Flexslider */
 
@@ -240,7 +279,8 @@
 
 	.flexslider-caption p
 	{
-		margin: 7px 0 0 10px
+		margin: 7px 0 0 10px;
+		width: 270px;
 	}
 
 	.flex-control-thumbs
@@ -265,6 +305,17 @@
 		height: 136px !important;
 	}
 
+	#fs-post .flexslider-caption p
+	{
+		width: 300px;
+	}
+
+	#fs-post .post-slide
+	{
+		width: 320px !important;
+		height: 155px !important;
+	}
+
 	/* Individual blog post (single.php) */
 	.blog-content
 	{
@@ -284,6 +335,7 @@
 
 	.ssba img
 	{
+		/* remember to set custom CSS of this to 0px in the plugin config page */
 		width: 60px !important;
 	}
 
@@ -306,12 +358,12 @@
 
 	.post-info h1
 	{
-		font-size: 22px;
+		font-size: 26px;
 	}
 
 	.post-info p
 	{
-		font-size: 18px;
+		font-size: 22px;
 		margin: 10px 0;
 	}
 
@@ -324,8 +376,8 @@
 	.blog-text-container p
 	{
 		width: inherit;
-		font-size: 18px;
-		line-height: 26px;
+		font-size: 20px;
+		line-height: 28px;
 	}
 
 	.post-tag-container
@@ -337,5 +389,53 @@
 	.post-tag-container p
 	{
 		font-size: 18px;
+	}
+
+	.post-tags
+	{
+		width: inherit;
+		margin: 30px 0 0;
+	}
+
+	.post-tag
+	{
+		margin: 0 20px 25px 0;
+	}
+
+	.tag-left
+	{
+		width: 36px;
+		height: 45px;
+	}
+
+	.tag-right
+	{
+		padding: 11px 10px 12px;
+	}
+
+	.tag-right a
+	{
+		font-size: 18px;
+	}
+
+	/* Category page */
+	.cat-header
+	{
+		width: inherit;
+	}
+
+	.cat-desc
+	{
+		width: inherit;
+	}
+
+	.cat-desc p
+	{
+		font-size: 20px;
+	}
+
+	.cat-name h1
+	{
+		font-size: 28px;
 	}
 }

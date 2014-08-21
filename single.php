@@ -7,7 +7,6 @@
                 $images1 = get_children( array('post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') );
 
                 $number_of_images = count($images1);
-                debug_to_console( $number_of_images );
                 ?>
                 <?php if ($number_of_images > 1) { ?>
                 <div class="flexslider" id="fs-post">
