@@ -550,4 +550,49 @@
 	{
 		display: none;
 	}
+
+	/* About page */
+	.about-text-cont
+	{
+		width: 280px;
+		margin: 0 auto 30px;
+	}
+
+	.about-header h1
+	{
+		font-size: 28px;
+	}
+
+	.about-text p
+	{
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.author-list-cont
+	{
+		width: 280px;
+		margin: 0 auto 30px;
+	}
+
+	.author-list-cont h2
+	{
+		font-size: 24px;
+	}
+
+	.author-list
+	{
+		margin: 0 0 10px;
+	}
+
+	.author-list li
+	{
+		float: none;
+		margin: 0 30px 30px 0;
+	}
+
+	.author-list li a
+	{
+		font-size: 22px;
+	}
 }
