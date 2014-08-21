@@ -3,17 +3,7 @@
         <div class="error-content">
 
             <div class="error-image-main">
-                <div class="err-desk">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image.jpg" />
-                </div>
-                <!--
-                <div class="err-phone">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image-phone.jpg" />
-                </div>
-                <div class="err-devices">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image-devices.jpg" />
-                </div>
-                -->
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image.jpg" />
             </div><!--//post-image-main-->
 
             <div class="error-text">
@@ -32,7 +22,7 @@
                 <?php while ( $recentPosts->have_posts() ) : $recentPosts->the_post(); ?>
                 <div id="rp-pos<?php echo $a++ ?>" class="recent-post">
                     <div class="recent-image">
-                        <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'pop-thumb' ); ?></a>
+                        <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'post-gal-image' ); ?></a>
                     </div>
                     <div class="recent-text">
                         <h3><a href="<?php the_permalink() ?>" rel="bookmark">
