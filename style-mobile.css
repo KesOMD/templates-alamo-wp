@@ -1,4 +1,4 @@
-/* iPhone 5 Portrait */
+/* Mobile Portrait */
 
 @media only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 320px) {
 
@@ -635,7 +635,7 @@
 	.actpage-container
 	{
 		width: inherit;
-		height: 400px;
+		height: 410px;
 		overflow: hidden;
 	}
 

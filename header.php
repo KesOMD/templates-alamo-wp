@@ -259,10 +259,19 @@
       </div><!-- dest-dropdown -->
 
       <div class="mob-dropdown" id="mobile-dd">
+        <?php
+        $actlistpage = get_page_by_title( "Activities", "ARRAY_N" );
+        $actlistpageID = $actlistpage[0];
+        $actlistpageURL = get_page_link( $actlistpageID );
+
+        $destlistpage = get_page_by_title( "Destinations", "ARRAY_N" );
+        $destlistpageID = $destlistpage[0];
+        $destlistpageURL = get_page_link( $destlistpageID );
+        ?>
         <ul>
-          <li><a href=""><p>Home</p></a></li>
-          <li><a href=""><p>Activities</p></a></li>
-          <li><a href=""><p>Destinations</p></a></li>
+          <li><a href="<?php bloginfo('url'); ?>"><p>Home</p></a></li>
+          <li><a href="<?php echo $actlistpageURL; ?>"><p>Activities</p></a></li>
+          <li><a href="<?php echo $destlistpageURL; ?>"><p>Destinations</p></a></li>
         </ul>
       </div><!-- Mobile Dropdown -->
     </div><!-- dropdown-container -->
