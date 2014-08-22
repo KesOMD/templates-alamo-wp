@@ -595,4 +595,120 @@
 	{
 		font-size: 22px;
 	}
+
+	/* Destinations Template (dest.php) */
+	.destpage-container
+	{
+		width: inherit;
+		margin: 25px 0 0;
+	}
+
+	.destpage-container a
+	{
+		text-decoration: none;
+	}
+
+	.destpage-container h2
+	{
+		color: #0063a8;
+		font-size: 22px;
+		margin: 0 0 20px;
+	}
+
+	.destpage-bycategories .cat-item
+	{
+		margin: 0 0 20px;
+	}
+
+	.destpage-bycategories .cat-item a
+	{
+		font-size: 22px;
+		-webkit-text-stroke: 0.5px;
+	}
+
+	#other-dest h2
+	{
+		color: #000;
+	}
+
+	/* Activities page (activities.php) */
+	.actpage-container
+	{
+		width: inherit;
+		height: 400px;
+		overflow: hidden;
+	}
+
+	.act-button
+	{
+		width: 140px;
+		height: 120px;
+		margin: 0 0 25px;
+	}
+
+	.act-button a span
+	{
+		font-family: GothamMedium, Arial;
+		font-size: 18px;
+	}
+
+	a.food
+	{
+		margin: 35px auto 0;
+	}
+
+	a.food span
+	{
+		margin: 64px 0 0 8px;
+	}
+
+	a.adventure
+	{
+		margin: 29px auto 0;
+	}
+
+	a.adventure span
+	{
+		margin: 70px 0 0 -19px;
+	}
+
+	a.sport
+	{
+		margin: 40px auto 0;
+	}
+
+	a.sport span
+	{
+		margin: 58px 0  0 2px;
+	}
+
+	a.lifestyle
+	{
+		margin: 31px auto 0;
+	}
+
+	a.lifestyle span
+	{
+		margin: 66px 0 0 4px;
+	}
+
+	a.entertainment
+	{
+		margin: 33px auto 0;
+	}
+
+	a.entertainment span
+	{
+		margin: 64px 0 0 -41px;
+	}
+
+	a.general
+	{
+		margin: 35px auto 0;
+	}
+
+	a.general span
+	{
+		margin: 62px 0 0 -7px;
+	}
 }
