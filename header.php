@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style-mobile.css" type="text/css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 <!--[if lt IE 9]>
 

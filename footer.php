@@ -11,8 +11,9 @@
                     <a>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/alamo_logo_213x96.png" class="logo" />
                     </a>
+                    <p>2014 Alamo Rent a car</p>
                 </div>
-                <p>2014 Alamo Rent a car</p>
+                
             </div>
 
             <div class="footer-links-cont">
