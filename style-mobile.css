@@ -313,8 +313,8 @@
 
 	#fs-post .post-slide
 	{
-		width: 320px !important;
-		height: 155px !important;
+		width: 100% !important;
+		height: 100% !important;
 	}
 
 	/* Individual blog post (single.php) */
@@ -386,6 +386,18 @@
 		width: inherit;
 		font-size: 20px;
 		line-height: 28px;
+	}
+
+	.blog-text-container img
+	{
+		/* for the INFOGRAHPIC post template */
+		width: 280px;
+		max-height: 520px;
+	}
+
+	.blog-text-container textarea
+	{
+		width: 280px !important;
 	}
 
 	.post-tag-container
@@ -723,7 +735,7 @@
 
 /* Mobile Landscape */
 
-@media only screen and (device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (width: 568px), only screen and (orientation: landscape)and (-webkit-device-pixel-ratio: 1.5) {
+@media only screen and (device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (width: 568px), only screen and (orientation: landscape) and (-webkit-device-pixel-ratio: 1.5), only screen and (width: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3), only screen and (width: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
 
 	/* Header */
 
@@ -1048,8 +1060,8 @@
 
 	#fs-post .post-slide
 	{
-		width: 568px !important;
-		height: 276px !important;
+		width: 100% !important;
+		height: 100% !important;
 	}
 
 	/* Individual blog post (single.php) */
@@ -1132,6 +1144,18 @@
 		width: inherit;
 		font-size: 20px;
 		line-height: 28px;
+	}
+
+	.blog-text-container img
+	{
+		/* for the INFOGRAHPIC post template */
+		width: 280px;
+		max-height: 520px;
+	}
+
+	.blog-text-container textarea
+	{
+		width: 516px !important;
 	}
 
 	.post-tag-container p
@@ -1304,6 +1328,42 @@
 		line-height: 28px;
 	}
 
+	/* Destinations Template (dest.php) */
+	.destpage-container
+	{
+		width: 516px;
+		margin: 25px auto 0;
+	}
+
+	.destpage-container a
+	{
+		text-decoration: none;
+	}
+
+	.destpage-container h2
+	{
+		color: #0063a8;
+		font-family: GothamBold, "Arial Black";
+		font-size: 22px;
+		margin: 0 0 20px;
+	}
+
+	.destpage-bycategories .cat-item
+	{
+		margin: 0 0 20px;
+	}
+
+	.destpage-bycategories .cat-item a
+	{
+		font-family: GothamBold, "Arial Black";
+		font-size: 22px;
+	}
+
+	#other-dest h2
+	{
+		color: #000;
+	}
+
 	/* Activities page (activities.php) */
 
 	.about-header
@@ -1396,4 +1456,809 @@
 	{
 		margin: 62px 0 0 -7px;
 	}
+
+	/* About Page */
+
+	.about-text-cont
+	{
+		width: 516px;
+		margin: 0 auto 30px;
+	}
+
+	.about-header h1
+	{
+		font-size: 28px;
+	}
+
+	.about-text p
+	{
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.author-list-cont
+	{
+		width: 516px;
+		margin: 0 auto 30px;
+	}
+
+	.author-list-cont h2
+	{
+		font-size: 24px;
+	}
+
+	.author-list
+	{
+		margin: 0 0 10px;
+	}
+
+	.author-list li
+	{
+		float: none;
+		margin: 0 30px 30px 0;
+	}
+
+	.author-list li a
+	{
+		font-size: 22px;
+	}
+}
+
+
+/* iPhone4 Landscape */
+
+@media only screen and (device-width : 480px) and (orientation : landscape) {
+
+	/* Header */
+
+	#header
+	{
+		padding: 0;
+		overflow-x: hidden;
+	}
+
+	.header-cont
+	{
+		width: 460px;
+		padding: 10px;
+	}
+
+	#logo-nav
+	{
+		display: none;
+	}
+
+	.mob-logo-cont
+	{
+		display: block;
+		float: left;
+		width: 50%;
+	}
+
+	.logo
+	{
+		width: 106px;
+		height: 48px;
+	}
+
+	.mob-button-cont
+	{
+		display: block;
+		float: left;
+		width: 50%;
+	}
+
+	.mob-button
+	{
+		float: right;
+	}
+
+	.mob-button img
+	{
+		width: 53px;
+		height: 48px;
+	}
+
+	.header-button-cont
+	{
+		display: none;
+	}
+
+	.mob-dropdown
+	{
+		display: none;
+		position: absolute;
+		width: inherit;
+		top: 71px;
+		left: 0;
+		background-color: #0061a8;
+		z-index: 399;
+	}
+
+	.mob-dropdown ul
+	{
+		width: 460px;
+		margin: 15px auto;
+		overflow: hidden;
+	}
+
+	.mob-dropdown ul li
+	{
+		padding: 0;
+		margin-bottom: 15px;
+	}
+
+	.mob-dropdown ul li a
+	{
+		text-decoration: none;
+	}
+
+	.mob-dropdown ul li a p
+	{
+		color: #fff;
+		font-size: 16pt;
+		font-family: GothamBold;
+		margin: 0;
+		letter-spacing: 0.5pt;
+	}
+
+	.intro-cont
+	{
+		width: 460px;
+	}
+
+	/* Footer */
+
+	#footer
+	{
+		padding-bottom: 25px; 
+	}
+
+	.footer_widgets_cont
+	{
+		width: inherit;
+
+	}
+
+	.footer-links a
+	{
+		/* */
+	}
+
+	.footer-links a p
+	{
+		color: #fff;
+		font-size: 16pt;
+		font-family: GothamBold;
+		margin: 0 0 15px;
+		letter-spacing: 0.5pt;
+		text-transform: none;
+	}
+
+	#fl-col1
+	{
+		margin: 0;
+	}
+
+	#fl-col2
+	{
+		margin: 0;
+	}
+
+	#fl-col3
+	{
+		float: left;
+	}
+
+	.footer-logo-cont
+	{
+		float: none;
+		width: 460px;
+		position: relative;
+		left: 0px;
+		top: 330px;
+		margin: 0 auto;
+	}
+
+	.footer-logo
+	{
+		width: 230px;
+	}
+
+	.footer-links-cont
+	{
+		float: none;
+		position: relative;
+		top: -120px;
+		width: 460px;
+		margin: 0 auto;
+	}
+
+	.footer-links
+	{
+		width: inherit;
+	}
+
+	/* index page */
+	#load_posts_container
+	{
+		width: 460px;
+	}
+
+	.main-post-text
+	{
+		width: inherit;
+	}
+
+	.main-post-title h2
+	{
+		font-size: 24px
+	}
+
+	.main-post-desc p
+	{
+		font-size: 19px;
+	}
+
+	.main-post-tags
+	{
+		display: none;
+	}
+
+	.main-post-link
+	{
+		width: 155px;
+	}
+
+	.main-post-link a p
+	{
+		font-size: 22px;
+	}
+
+	.main-post-link a img
+	{
+		width: 22px;
+		height: 22px;
+		margin: 3px 0 0;
+	}
+
+	#other-posts
+	{
+		width: inherit;
+	}
+
+	.home_post_box
+	{
+		width: inherit;
+		margin-right: 0;
+	}
+
+	.home_post_box img
+	{
+		width: 516px;
+		height: 318px;
+	}
+
+	.home_post_title_cont
+	{
+		width: inherit;
+	}
+
+	.home_post_title_cont h2
+	{
+		font-size: 24px;
+	}
+
+	.home_post_desc p
+	{
+		font-size: 19px;
+	}
+
+	.load_more_cont
+	{
+		width: inherit;
+	}
+
+	.right-side
+	{
+		display: none;
+	}
+
+	.post-info
+	{
+		width: inherit;
+	}
+
+	/* Flexslider */
+
+	.flex-direction-nav a
+	{
+		top: 120px;
+	}
+
+	.flexslider-caption
+	{
+		height: 48px;
+		bottom: 0px;
+		width: inherit;
+		background:  rgba(0, 0, 0, 0.5);
+		background: rgb(0, 0, 0)\9; /* IE8 and below */
+	}
+
+	.flexslider-caption p
+	{
+		margin: 7px 0 0 10px;
+		width: 496px;
+	}
+
+	.flex-control-thumbs
+	{
+		margin: 22px auto 0;
+		width: 280px;
+	}
+	
+	.flex-viewport
+	{
+		height: 248px;
+	}
+
+	.slides img
+	{
+		width: 516px !important;
+		height: 248px !important;
+	}
+
+	.slides li
+	{
+		height: 248px !important;
+	}
+
+	.flex-control-thumbs
+	{
+		margin: 0 auto;
+		width: 460px;
+	}
+
+	.flex-control-thumbs li
+	{
+		margin: 10px 5px 10px 2px;
+	}
+
+	#fs-post .flexslider-caption p
+	{
+		width: 496px;
+	}
+
+	#fs-post .post-slide
+	{
+		width: 568px !important;
+		height: 276px !important;
+	}
+
+	/* Individual blog post (single.php) */
+	.blog-content
+	{
+		width: inherit;
+	}
+
+	.share-container
+	{
+		padding: 0 0 18px;
+	}
+
+	.ssba img
+	{
+		/* remember to set custom CSS of this to 0px in the plugin config page */
+		width: 60px !important;
+	}
+
+	.ssba_sharecount
+	{
+		margin: 16px 12px 0 6px;
+		padding: 0 !important;
+		font-size: 20px !important;
+	}
+
+	.ssba_email_share
+	{
+		display: none;
+	}
+
+	.printfriendly
+	{
+		display: none;
+	}
+
+	.post-info h1
+	{
+		font-size: 26px;
+	}
+
+	.post-info p
+	{
+		font-size: 22px;
+		margin: 10px 0;
+	}
+
+	.post-details
+	{
+		width: 460px;
+		margin: 0 auto;
+	}
+
+	.blog-text-container
+	{
+		width: 460px;
+		margin: 0 auto 15px;
+	}
+
+	.post-tag-container
+	{
+		width: 460px;
+		margin: 0 auto;
+	}
+
+	.post-info h1
+	{
+		font-size: 26px;
+	}
+
+	.blog-text-container h1, .blog-text-container h2, .blog-text-container h3
+	{
+		width: inherit;
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.blog-text-container p
+	{
+		width: inherit;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.blog-text-container img
+	{
+		/* for the INFOGRAHPIC post template */
+		width: 280px;
+		max-height: 520px;
+	}
+
+	.blog-text-container textarea
+	{
+		width: 440px !important;
+	}
+
+	.post-tag-container p
+	{
+		font-size: 18px;
+	}
+
+	.post-tags
+	{
+		width: inherit;
+		margin: 30px 0 0;
+	}
+
+	.post-tag
+	{
+		margin: 0 20px 25px 0;
+	}
+
+	.tag-left
+	{
+		width: 36px;
+		height: 45px;
+	}
+
+	.tag-right
+	{
+		padding: 11px 10px 12px;
+	}
+
+	.tag-right a
+	{
+		font-size: 18px;
+	}
+
+	/* Category page */
+	.cat-header
+	{
+		width: inherit;
+	}
+
+	.cat-desc
+	{
+		width: inherit;
+	}
+
+	.cat-desc p
+	{
+		font-size: 20px;
+	}
+
+	.cat-name h1
+	{
+		font-size: 28px;
+	}
+
+	/* blank page template */
+
+	.blank-content
+	{
+		width: 460px;
+	}
+
+	.blank-header h1
+	{
+		font-size: 28px;
+	}
+
+	.blank-text p
+	{
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	/* 404 page template */
+	.error-content
+	{
+		width: inherit;
+	}
+
+	.error-image-main img
+	{
+		width: 480px;
+		height: 240px;
+	}
+
+	.error-text
+	{
+		width: 460px;
+		margin: 0 auto 25px;
+	}
+
+	.error-text h1
+	{
+		font-size: 28px;
+	}
+
+	.error-text p
+	{
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.error-text p a
+	{
+		color: #0063a8;
+	}
+
+	.recent-post-cont
+	{
+		width: 460px;
+	}
+
+	.recent-post-cont h2
+	{
+		color: #0063a8;
+		font-family: GothamBold, "Arial Black";
+		font-size: 24px;
+		margin: 0;
+	}
+
+	.recent-post
+	{
+		width: inherit;
+		margin: 30px 0 0;
+		padding: 0 0 20px;
+		border-bottom: 1px #ccc solid;
+	}
+
+	.recent-image
+	{
+		width: 516px;
+		height: 248px;
+	}
+
+	.recent-image img
+	{
+		width: 516px;
+		height: 248px;
+	}
+
+	.recent-text h3
+	{
+		font-size: 20px;
+	}
+
+	.v-divider
+	{
+		display: none;
+	}
+
+	/* Author page */
+	.author-cont
+	{
+		width: 460px;
+	}
+
+	.author-info
+	{
+		width: inherit;
+	}
+
+	.author-cont h1
+	{
+		font-size: 28px;
+	}
+
+	.author-description p
+	{
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	/* Destinations Template (dest.php) */
+	.about-text-cont
+	{
+		width: 460px;
+	}
+
+	.destpage-container
+	{
+		width: 460px;
+		margin: 25px auto 0;
+	}
+
+	.destpage-container a
+	{
+		text-decoration: none;
+	}
+
+	.destpage-container h2
+	{
+		color: #0063a8;
+		font-family: GothamBold, "Arial Black";
+		font-size: 22px;
+		margin: 0 0 20px;
+	}
+
+	.destpage-bycategories .cat-item
+	{
+		margin: 0 0 20px;
+	}
+
+	.destpage-bycategories .cat-item a
+	{
+		font-family: GothamBold, "Arial Black";
+		font-size: 22px;
+	}
+
+	#other-dest h2
+	{
+		color: #000;
+	}
+
+	/* Activities page (activities.php) */
+
+	.about-header
+	{
+		width: 460px;
+		margin: 15px auto;
+	}
+
+	.about-text-cont hr
+	{
+		width: 460px;
+		margin: 0 auto;
+	}
+	.actpage-container
+	{
+		width: inherit;
+		height: 410px;
+		overflow: hidden;
+	}
+
+	.act-button
+	{
+		width: 50%;
+		height: 120px;
+		margin: 0 0 25px;
+	}
+
+	.act-button a span
+	{
+		font-family: GothamMedium, Arial;
+		font-size: 18px;
+	}
+
+	a.food
+	{
+		margin: 35px auto 0;
+	}
+
+	a.food span
+	{
+		margin: 64px 0 0 8px;
+	}
+
+	a.adventure
+	{
+		margin: 29px auto 0;
+	}
+
+	a.adventure span
+	{
+		margin: 70px 0 0 -19px;
+	}
+
+	a.sport
+	{
+		margin: 40px auto 0;
+	}
+
+	a.sport span
+	{
+		margin: 58px 0  0 2px;
+	}
+
+	a.lifestyle
+	{
+		margin: 31px auto 0;
+	}
+
+	a.lifestyle span
+	{
+		margin: 66px 0 0 4px;
+	}
+
+	a.entertainment
+	{
+		margin: 33px auto 0;
+	}
+
+	a.entertainment span
+	{
+		margin: 64px 0 0 -41px;
+	}
+
+	a.general
+	{
+		margin: 35px auto 0;
+	}
+
+	a.general span
+	{
+		margin: 62px 0 0 -7px;
+	}
+
+	/* About Page */
+	.author-list-cont
+	{
+		width: 460px;
+		margin: 0 auto 30px;
+	}
+
+	.author-list-cont h2
+	{
+		font-size: 24px;
+	}
+
+	.author-list
+	{
+		margin: 0 0 10px;
+	}
+
+	.author-list li
+	{
+		float: none;
+		margin: 0 30px 30px 0;
+	}
+
+	.author-list li a
+	{
+		font-size: 22px;
+	}
+}
 }
