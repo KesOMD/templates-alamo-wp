@@ -49,7 +49,7 @@ get_header(); ?>
                 <?php while ( $recentPosts->have_posts() ) : $recentPosts->the_post(); ?>
                 <div id="rp-pos<?php echo $a++ ?>" class="recent-post">
                     <div class="recent-image">
-                        <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'pop-thumb' ); ?></a>
+                        <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'post-gal-image' ); ?></a>
                     </div>
                     <div class="recent-text">
                         <h3><a href="<?php the_permalink() ?>" rel="bookmark">

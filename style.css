@@ -757,7 +757,7 @@ a.general span
 .home_post_box img
 {
 	width: 516px;
-	height: 318px;
+	height: 248px;
 }
 
 .home_post_title_cont
@@ -2027,7 +2027,7 @@ html[xmlns] .slides {display: block;}
 @media screen and (max-height: 767px) {
 	.pop-container
 	{
-		height: 180px;
+		height: 168px;
 	}
 }
 

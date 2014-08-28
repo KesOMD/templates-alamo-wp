@@ -107,7 +107,7 @@
               $titleAlt = the_title_attribute('echo=0');
               ?>
 
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-blog-image',array('alt' => $titleAlt)); ?></a>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-gal-image',array('alt' => $titleAlt)); ?></a>
 
               <div class="home_post_title_cont">
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
