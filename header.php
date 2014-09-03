@@ -8,11 +8,11 @@
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>          
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
-
+<!--
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style-mobile.css" type="text/css">
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style-tablet.css" type="text/css">
-
+-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 <!--[if lt IE 9]>
