@@ -46,7 +46,6 @@ body ul, body li
 h1,h2,h3,h4,h5,p
 {
 	margin: 10px 0;
-	-webkit-text-stroke: 0.5px;
 }
 
 .left { float: left; }
@@ -1186,10 +1185,12 @@ a.general span
 
 .flexslider-caption p
 {
-	display: inline-block;
+	display: table-cell;
 	font-family: GothamBook, Arial;
 	font-size: 15px;
-	margin: 16px 0 0 30px;
+	text-align: left;
+	vertical-align: middle;
+	padding: 0 20px;
 	filter: alpha(opacity=100);
 }
 
@@ -1240,7 +1241,7 @@ html[xmlns] .slides {display: block;}
 
 .flex-active-slide .flexslider-caption
 {
-	display: block;
+	display: table;
 }
 
 /* Direction Nav */
