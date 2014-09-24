@@ -1623,14 +1623,18 @@ html[xmlns] .slides {display: block;}
 
 .tag-right
 {
+	display: table;
 	background-color: #e5e5e5;
 	float: left;
-	padding: 6px 10px 7px;
-	padding: 7px 10px 7px\9\0; /* IE9 only */
+	padding: 0 10px 0 10px;
+	padding: 0 10px 0 10px\9\0; /* IE9 only */
+	height: 30px;
 }
 
 .tag-right a
 {
+	display: table-cell;
+	vertical-align: middle;
 	color: #0061a8;
 	font-family: GothamBook, Arial;
 	font-size: 14px;

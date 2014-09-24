@@ -431,7 +431,8 @@
 
 	.tag-right
 	{
-		padding: 11px 10px 12px;
+		padding: 0 10px 0;
+		height: 45px;
 	}
 
 	.tag-right a

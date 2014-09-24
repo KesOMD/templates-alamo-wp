@@ -66,6 +66,11 @@
   });
   </script>
 
+  <link rel="alternate" type="application/rss+xml" title="Alamo » Feed RDF-RSS 1" href="<?php bloginfo('rdf_url'); ?>">
+  <link rel="alternate" type="application/rss+xml" title="Alamo » Feed RSS 0.92" href="<?php bloginfo('rss_url'); ?>">
+  <link rel="alternate" type="application/rss+xml" title="Alamo » Feed RSS 2" href="<?php bloginfo('rss2_url'); ?>">
+  <link rel="alternate" type="application/rss+xml" title="Alamo » Feed Atom" href="<?php bloginfo('atom_url'); ?>">
+
 </head>
 
 <body>

@@ -19,7 +19,14 @@
             <div class="footer-links-cont">
                 <div class="footer-links" id="fl-col1">
                     <a href="http://www.alamo.co.uk/" target="_blank" alt="Home"><p>Home</p></a>
-                    <a href="http://aboutus.alamo.co.uk/" target="_blank" alt="About Us"><p>About Alamo</p></a>
+                    <?php
+                    $aboutpage = get_page_by_title( "About Alamo", "ARRAY_N" );
+                    $aboutpageID = $aboutpage[0];
+                    $aboutpageURL = get_page_link( $aboutpageID );
+                    ?>
+                    <a href="<?php echo $aboutpageURL; ?>" target="_blank" alt="About Us">
+                        <p>About Alamo</p>
+                    </a>
                     <a href="http://www.alamo.co.uk/Content/740/uk/ContactUs" target="_blank" alt="Contact Us"><p>Contact us</p></a>
                 </div>
                 <div class="footer-links" id="fl-col2">

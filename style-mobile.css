@@ -128,7 +128,7 @@
 		width: 50%;
 		position: relative;
 		left: 20px;
-		top: 330px;
+		top: 350px;
 	}
 
 	.footer-links-cont
@@ -430,7 +430,7 @@
 
 	.tag-right
 	{
-		padding: 14px 10px 13px;
+		height: 45px;
 	}
 
 	.tag-right a
@@ -507,8 +507,8 @@
 
 	.error-image-main img
 	{
-		width: 320px;
-		height: 155px;
+		width: 100%;
+		height: 100%;
 	}
 
 	.error-text
@@ -735,7 +735,7 @@
 
 /* Mobile Landscape */
 
-@media only screen and (min-device-width : 480px) and (max-device-width: 767px) and (orientation : landscape), only screen and (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 533px) and (max-width: 853px) and (orientation: portrait) {
+@media only screen and (min-device-width : 480px) and (max-device-width: 767px) and (orientation : landscape), only screen and (-webkit-device-pixel-ratio: 1.5) and (min-width: 533px) and (max-width: 853px) and (orientation: portrait) {
 
 	/* Header */
 
