@@ -596,12 +596,14 @@
 	.destpage-bycategories .cat-item
 	{
 		margin: 0 0 20px;
+		width: 50%;
+		float: left;
 	}
 
 	.destpage-bycategories .cat-item a
 	{
 		font-family: GothamBold, "Arial Black";
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	#other-dest h2
@@ -1141,7 +1143,7 @@
 
 	.tag-right
 	{
-		padding: 11px 10px 12px;
+		height: 45px;
 	}
 
 	.tag-right a
@@ -1316,6 +1318,8 @@
 	.destpage-bycategories .cat-item
 	{
 		margin: 0 0 20px;
+		width: 50%;
+		float: left;
 	}
 
 	.destpage-bycategories .cat-item a

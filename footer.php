@@ -11,7 +11,7 @@
                     <a>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/alamo_logo_213x96.png" class="logo" />
                     </a>
-                    <p>2014 Alamo Rent a car</p>
+                    <p>2014 Alamo Rent A Car</p>
                 </div>
                 
             </div>
@@ -24,7 +24,7 @@
                     $aboutpageID = $aboutpage[0];
                     $aboutpageURL = get_page_link( $aboutpageID );
                     ?>
-                    <a href="<?php echo $aboutpageURL; ?>" target="_blank" alt="About Us">
+                    <a href="<?php echo $aboutpageURL; ?>" target="_self" alt="About Us">
                         <p>About Alamo</p>
                     </a>
                     <a href="http://www.alamo.co.uk/Content/740/uk/ContactUs" target="_blank" alt="Contact Us"><p>Contact us</p></a>
