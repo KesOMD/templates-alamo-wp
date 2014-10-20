@@ -288,6 +288,7 @@
 	{
 		margin: 22px auto 0;
 		width: 280px;
+		max-height: 63px;
 	}
 	
 	.flex-viewport
@@ -1045,6 +1046,7 @@
 	{
 		margin: 0 auto;
 		width: 460px;
+		max-height: 76px;
 	}
 
 	.flex-control-thumbs li
